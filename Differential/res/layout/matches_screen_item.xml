@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:orientation="vertical" android:background="@drawable/list_item_gradient" >
+	<TextView android:id="@+id/date" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:textSize="12sp"
+		android:gravity="left" android:paddingBottom="0sp"
+		android:layout_marginBottom="0sp" android:paddingTop="0sp"
+		android:layout_marginTop="0sp" android:textColor="#FF999999" />
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="horizontal"
+		android:paddingTop="0sp" android:layout_marginTop="0sp">
+		<TextView android:id="@+id/homename" android:layout_width="0dp"
+			android:layout_height="wrap_content" android:textSize="18sp"
+			android:gravity="left" android:textColor="#FFFFFF"
+			android:layout_weight="0.36" android:paddingTop="0sp"
+			android:layout_marginTop="0sp" />
+		<TextView android:id="@+id/homescore" android:layout_width="0dp"
+			android:layout_height="wrap_content" android:textSize="20sp"
+			android:gravity="center" android:textColor="#FFFF00"
+			android:layout_weight="0.08" android:paddingTop="0sp"
+			android:layout_marginTop="0sp" />
+		<TextView android:layout_width="0dp" android:layout_height="wrap_content"
+			android:textSize="20sp" android:gravity="center"
+			android:layout_weight="0.05" android:text="-" android:paddingTop="0sp"
+			android:layout_marginTop="0sp" />
+		<TextView android:id="@+id/awayscore" android:layout_width="0dp"
+			android:layout_height="wrap_content" android:textSize="20sp"
+			android:gravity="center" android:textColor="#FFFF00"
+			android:layout_weight="0.08" android:paddingTop="0sp"
+			android:layout_marginTop="0sp" />
+		<TextView android:id="@+id/awayname" android:layout_width="0dp"
+			android:layout_height="wrap_content" android:textSize="18sp"
+			android:gravity="right" android:textColor="#FFFFFF"
+			android:layout_weight="0.36" android:paddingTop="0sp"
+			android:layout_marginTop="0sp" />
+		<ImageView android:id="@+id/state" android:layout_width="0dp"
+			android:layout_height="wrap_content" android:layout_weight="0.09"
+			android:contentDescription="Status" android:paddingTop="0sp"
+			android:layout_marginTop="0sp" />
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="vertical">
+		<TextView android:id="@+id/small_print_text" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:textSize="14sp"
+			android:textColor="#FFFFFF" android:paddingBottom="10sp" />
+		<TextView android:id="@+id/templay_text" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:textSize="14sp"
+			android:textColor="#FFFFFF" android:paddingTop="12sp"
+			android:text="Icon by Templay" />
+		<TextView android:id="@+id/templay" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textSize="16sp"
+			android:textColor="#FFFFFF" android:paddingTop="4sp"
+			android:paddingBottom="4sp" android:paddingLeft="2sp"
+			android:paddingRight="2sp" android:layout_marginLeft="4sp"
+			android:clickable="true" android:background="#44ffffff"
+			android:layout_marginRight="10sp" android:layout_marginTop="4sp"
+			android:text="templay.de - Creative downloads"
+			android:onClick="clickTemplay" />
+		<TextView android:id="@+id/androidplot" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:textSize="14sp"
+			android:textColor="#FFFFFF" android:paddingBottom="10sp"
+			android:layout_marginTop="5sp" />
+	</LinearLayout>
+</ScrollView>

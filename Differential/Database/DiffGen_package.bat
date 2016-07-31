@@ -1,0 +1,1 @@
+copy DiffGen_12.zip ../assets /Y

@@ -1,0 +1,856 @@
+UTC: Wed 29 Aug 00:27
+Local: Tue 28 Aug 17:27
+UK: Wed 29 Aug 01:27
+
+proc: 0 (Scores) updated: Tue 28 Aug 11:00 prev: Tue 28 Aug 11:00 next: Wed 29 Aug 11:00 fresh: true
+proc: 1 (Players) updated: Wed 29 Aug 00:25 prev: Tue 28 Aug 04:00 next: Wed 29 Aug 04:00 fresh: true
+proc: 2 (Leagues) updated: Wed 29 Aug 00:25 prev: Sat 25 Aug 10:30 next: Sat 1 Sep 10:30 fresh: true
+proc: 3 (Fixtures) updated: Sun 26 Aug 11:07 prev: Sat 25 Aug 10:30 next: Sat 1 Sep 10:30 fresh: true
+proc: 4 (Processing) updated: Sun 26 Aug 11:17 prev: Sat 25 Aug 10:30 next: Sat 1 Sep 10:30 fresh: true
+installed_on_sd: false
+cur_gameweek: 2
+gw_score: com.pennas.fpl.c.w@407e4fe0
+total_score: 156
+my_squad_id: 121528
+logged_in: true
+FPLService.cycles: 575
+FPLService.fails: 0
+FPLService.sincefail: 6
+FPLService.hasfailed: true
+Alarm: Wed 29 Aug 04:00
+
+GW Fixtures:-
+id: 1153 kickoff_datetime: Sat 25 Aug 15:00 team_away_id: 8 team_home_id: 2 complete: true
+id: 1152 kickoff_datetime: Sat 25 Aug 12:45 team_away_id: 18 team_home_id: 23 complete: true
+id: 1155 kickoff_datetime: Sat 25 Aug 15:00 team_away_id: 22 team_home_id: 21 complete: true
+id: 1154 kickoff_datetime: Sat 25 Aug 15:00 team_away_id: 9 team_home_id: 12 complete: true
+id: 1156 kickoff_datetime: Sat 25 Aug 15:00 team_away_id: 19 team_home_id: 24 complete: true
+id: 1159 kickoff_datetime: Sat 25 Aug 17:30 team_away_id: 13 team_home_id: 7 complete: true
+id: 1158 kickoff_datetime: Sat 25 Aug 15:00 team_away_id: 17 team_home_id: 16 complete: true
+id: 1161 kickoff_datetime: Sun 26 Aug 16:00 team_away_id: 11 team_home_id: 10 complete: true
+id: 1160 kickoff_datetime: Sun 26 Aug 13:30 team_away_id: 1 team_home_id: 14 complete: true
+
+My Squad Cur:
+
+User Comments:-
+can't transfer getting err:null
+
+Log Entries:-
+squad_string: 70, 89, 124, 184, 190, 226, 230, 252, 423, 429, 448, 496, 532, 537, 546teams_string: null
+max: 13.3 min: 4.0 default: 7.3
+k
+Players::popList()
+Players onResume()
+<Wed 29 Aug 01:23:00> menu: 2131100001
+<Wed 29 Aug 01:23:03> menu: 0
+<Wed 29 Aug 01:23:04> menu: 2006
+subclass
+i
+Players::popList()
+<Wed 29 Aug 01:23:08> Players onPause()
+populateGrid()
+done populateGrid() in 0.107 seconds
+Selection onResume()
+<Wed 29 Aug 01:23:15> starting transfer squad ids get
+getPLUserCookie
+<Wed 29 Aug 01:23:16> got plUserCookie
+getUrlStreamCore http://fantasy.premierleague.com/accounts/login/ get_auth: 0 use_auth: -1
+<Wed 29 Aug 01:23:17> url size: -1 / encoding: null / resp code: 302
+final URL: http://fantasy.premierleague.com/accounts/login/
+URL success: 302: FOUND
+getUrlStreamCore http://fantasy.premierleague.com/transfers/ get_auth: -1 use_auth: 0
+url size: -1 / encoding: gzip / resp code: 200
+final URL: http://fantasy.premierleague.com/transfers/
+URL success: 200: OK
+<Wed 29 Aug 01:23:18> token: N9gheEhb3wYUwIGufP8mLyqlTZMtaALx
+sell price: 55
+fpl id: 226 element: 1822906 index: 0 sell price: 55
+sell price: 45
+fpl id: 252 element: 1822907 index: 1 sell price: 45
+sell price: 66
+fpl id: 70 element: 1822908 index: 2 sell price: 66
+sell price: 50
+fpl id: 124 element: 1822909 index: 3 sell price: 50
+sell price: 50
+fpl id: 230 element: 1822910 index: 4 sell price: 50
+sell price: 40
+fpl id: 532 element: 1822911 index: 5 sell price: 40
+sell price: 40
+fpl id: 496 element: 1822913 index: 6 sell price: 40
+sell price: 95
+fpl id: 448 element: 1822915 index: 7 sell price: 95
+sell price: 80
+fpl id: 184 element: 1822917 index: 8 sell price: 80
+sell price: 90
+fpl id: 546 element: 1822919 index: 9 sell price: 90
+sell price: 45
+fpl id: 423 element: 1822920 index: 10 sell price: 45
+sell price: 68
+fpl id: 537 element: 1822922 index: 11 sell price: 68
+sell price: 93
+fpl id: 190 element: 1822924 index: 12 sell price: 93
+sell price: 100
+fpl id: 89 element: 1822926 index: 13 sell price: 100
+sell price: 60
+fpl id: 429 element: 1822928 index: 14 sell price: 60
+done transfer squad ids in 3.514 seconds
+in: 166(3)
+out: 423(3)
+new
+0: 226
+1: 252
+2: 70
+3: 124
+4: 230
+5: 532
+6: 496
+7: 448
+8: 184
+9: 546
+10: 166
+11: 537
+12: 190
+13: 89
+14: 429
+starting fpl confirmation info get
+getUrlStreamCore http://fantasy.premierleague.com/transfers/confirm/ get_auth: -1 use_auth: 0
+posting: csrfmiddlewaretoken=N9gheEhb3wYUwIGufP8mLyqlTZMtaALx&transfers_form-event_id=3&transfers_form-confirmed=True&transfers_form-wildcard=&pick_formset-TOTAL_FORMS=15&pick_formset-INITIAL_FORMS=15&pick_formset-MAX_NUM_FORMS=15&pick_formset-0-element=226&pick_formset-0-purchase_price=&pick_formset-0-selling_price=55&pick_formset-0-id=1822906&pick_formset-1-element=252&pick_formset-1-purchase_price=&pick_formset-1-selling_price=45&pick_formset-1-id=1822907&pick_formset-2-element=70&pick_formset-2-purchase_price=&pick_formset-2-selling_price=66&pick_formset-2-id=1822908&pick_formset-3-element=124&pick_formset-3-purchase_price=&pick_formset-3-selling_price=50&pick_formset-3-id=1822909&pick_formset-4-element=230&pick_formset-4-purchase_price=&pick_formset-4-selling_price=50&pick_formset-4-id=1822910&pick_formset-5-element=532&pick_formset-5-purchase_price=&pick_formset-5-selling_price=40&pick_formset-5-id=1822911&pick_formset-6-element=496&pick_formset-6-purchase_price=&pick_formset-6-selling_price=40&pick_formset-6-id=1822912&pick_formset-7-element=448&pick_formset-7-purchase_price=&pick_formset-7-selling_price=95&pick_formset-7-id=1822913&pick_formset-8-element=184&pick_formset-8-purchase_price=&pick_formset-8-selling_price=80&pick_formset-8-id=1822914&pick_formset-9-element=546&pick_formset-9-purchase_price=&pick_formset-9-selling_price=90&pick_formset-9-id=1822915&pick_formset-10-element=166&pick_formset-10-purchase_price=45&pick_formset-10-selling_price=45&pick_formset-10-id=1822916&pick_formset-11-element=537&pick_formset-11-purchase_price=&pick_formset-11-selling_price=68&pick_formset-11-id=1822917&pick_formset-12-element=190&pick_formset-12-purchase_price=&pick_formset-12-selling_price=93&pick_formset-12-id=1822918&pick_formset-13-element=89&pick_formset-13-purchase_price=&pick_formset-13-selling_price=100&pick_formset-13-id=1822919&pick_formset-14-element=429&pick_formset-14-purchase_price=&pick_formset-14-selling_price=60&pick_formset-14-id=1822920
+<Wed 29 Aug 01:23:19> url size: -1 / encoding: null / resp code: 302
+final URL: http://fantasy.premierleague.com/transfers/confirm/
+Game is updating
+URL fail: 302: FOUND
+fpl confirmation info: url failed
+done fpl confirmation info in 0.649 seconds
+Error: in/out don't look correct
+no FPL message
+Transfer error: null
+<Wed 29 Aug 01:23:31> starting transfer squad ids get
+getPLUserCookie
+<Wed 29 Aug 01:23:33> got plUserCookie
+getUrlStreamCore http://fantasy.premierleague.com/accounts/login/ get_auth: 0 use_auth: -1
+url size: -1 / encoding: null / resp code: 302
+final URL: http://fantasy.premierleague.com/accounts/login/
+URL success: 302: FOUND
+getUrlStreamCore http://fantasy.premierleague.com/transfers/ get_auth: -1 use_auth: 0
+<Wed 29 Aug 01:23:34> url size: -1 / encoding: gzip / resp code: 200
+final URL: http://fantasy.premierleague.com/transfers/
+URL success: 200: OK
+token: NBS1rdwhdqtQFQJetOW0Xk73Y3JGzO5v
+sell price: 55
+fpl id: 226 element: 1822906 index: 0 sell price: 55
+sell price: 45
+fpl id: 252 element: 1822907 index: 1 sell price: 45
+sell price: 66
+fpl id: 70 element: 1822908 index: 2 sell price: 66
+sell price: 50
+fpl id: 124 element: 1822909 index: 3 sell price: 50
+sell price: 50
+fpl id: 230 element: 1822910 index: 4 sell price: 50
+sell price: 40
+fpl id: 532 element: 1822911 index: 5 sell price: 40
+sell price: 40
+fpl id: 496 element: 1822913 index: 6 sell price: 40
+sell price: 95
+fpl id: 448 element: 1822915 index: 7 sell price: 95
+sell price: 80
+fpl id: 184 element: 1822917 index: 8 sell price: 80
+sell price: 90
+fpl id: 546 element: 1822919 index: 9 sell price: 90
+sell price: 45
+fpl id: 423 element: 1822920 index: 10 sell price: 45
+sell price: 68
+fpl id: 537 element: 1822922 index: 11 sell price: 68
+sell price: 93
+fpl id: 190 element: 1822924 index: 12 sell price: 93
+sell price: 100
+fpl id: 89 element: 1822926 index: 13 sell price: 100
+sell price: 60
+fpl id: 429 element: 1822928 index: 14 sell price: 60
+<Wed 29 Aug 01:23:35> done transfer squad ids in 3.332 seconds
+in: 166(3)
+out: 423(3)
+new
+0: 226
+1: 252
+2: 70
+3: 124
+4: 230
+5: 532
+6: 496
+7: 448
+8: 184
+9: 546
+10: 166
+11: 537
+12: 190
+13: 89
+14: 429
+starting fpl confirmation info get
+getUrlStreamCore http://fantasy.premierleague.com/transfers/confirm/ get_auth: -1 use_auth: 0
+posting: csrfmiddlewaretoken=NBS1rdwhdqtQFQJetOW0Xk73Y3JGzO5v&transfers_form-event_id=3&transfers_form-confirmed=True&transfers_form-wildcard=&pick_formset-TOTAL_FORMS=15&pick_formset-INITIAL_FORMS=15&pick_formset-MAX_NUM_FORMS=15&pick_formset-0-element=226&pick_formset-0-purchase_price=&pick_formset-0-selling_price=55&pick_formset-0-id=1822906&pick_formset-1-element=252&pick_formset-1-purchase_price=&pick_formset-1-selling_price=45&pick_formset-1-id=1822907&pick_formset-2-element=70&pick_formset-2-purchase_price=&pick_formset-2-selling_price=66&pick_formset-2-id=1822908&pick_formset-3-element=124&pick_formset-3-purchase_price=&pick_formset-3-selling_price=50&pick_formset-3-id=1822909&pick_formset-4-element=230&pick_formset-4-purchase_price=&pick_formset-4-selling_price=50&pick_formset-4-id=1822910&pick_formset-5-element=532&pick_formset-5-purchase_price=&pick_formset-5-selling_price=40&pick_formset-5-id=1822911&pick_formset-6-element=496&pick_formset-6-purchase_price=&pick_formset-6-selling_price=40&pick_formset-6-id=1822912&pick_formset-7-element=448&pick_formset-7-purchase_price=&pick_formset-7-selling_price=95&pick_formset-7-id=1822913&pick_formset-8-element=184&pick_formset-8-purchase_price=&pick_formset-8-selling_price=80&pick_formset-8-id=1822914&pick_formset-9-element=546&pick_formset-9-purchase_price=&pick_formset-9-selling_price=90&pick_formset-9-id=1822915&pick_formset-10-element=166&pick_formset-10-purchase_price=45&pick_formset-10-selling_price=45&pick_formset-10-id=1822916&pick_formset-11-element=537&pick_formset-11-purchase_price=&pick_formset-11-selling_price=68&pick_formset-11-id=1822917&pick_formset-12-element=190&pick_formset-12-purchase_price=&pick_formset-12-selling_price=93&pick_formset-12-id=1822918&pick_formset-13-element=89&pick_formset-13-purchase_price=&pick_formset-13-selling_price=100&pick_formset-13-id=1822919&pick_formset-14-element=429&pick_formset-14-purchase_price=&pick_formset-14-selling_price=60&pick_formset-14-id=1822920
+url size: -1 / encoding: null / resp code: 302
+final URL: http://fantasy.premierleague.com/transfers/confirm/
+Game is updating
+URL fail: 302: FOUND
+fpl confirmation info: url failed
+done fpl confirmation info in 0.636 seconds
+Error: in/out don't look correct
+no FPL message
+Transfer error: null
+<Wed 29 Aug 01:23:46> Selection onPause()
+Home onResume()
+<Wed 29 Aug 01:23:49> widget update: points
+<Wed 29 Aug 01:24:23> FPLService initProc: 1
+record_transfers: false
+starting my squad scrape gw 3
+getPLUserCookie
+<Wed 29 Aug 01:24:25> java.io.IOException: Received authentication challenge is null
+java.io.IOException: Received authentication challenge is null
+at org.apache.harmony.luni.internal.net.www.protocol.http.HttpURLConnectionImpl.processAuthHeader(HttpURLConnectionImpl.java:1153)
+at org.apache.harmony.luni.internal.net.www.protocol.http.HttpURLConnectionImpl.processResponseHeaders(HttpURLConnectionImpl.java:1095)
+at org.apache.harmony.luni.internal.net.www.protocol.http.HttpURLConnectionImpl.retrieveResponse(HttpURLConnectionImpl.java:1048)
+at org.apache.harmony.luni.internal.net.www.protocol.http.HttpURLConnectionImpl.getResponseCode(HttpURLConnectionImpl.java:726)
+at org.apache.harmony.luni.internal.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:121)
+at com.pennas.fpl.c.ac.b(SourceFile:188)
+at com.pennas.fpl.c.ac.a(SourceFile:109)
+at com.pennas.fpl.c.ac.a(SourceFile:90)
+at com.pennas.fpl.c.ac.a(SourceFile:135)
+at com.pennas.fpl.b.m.a(SourceFile:122)
+at com.pennas.fpl.process.d.a(SourceFile:162)
+at com.pennas.fpl.process.d.doInBackground(SourceFile:1)
+at android.os.AsyncTask$2.call(AsyncTask.java:185)
+at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:306)
+at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1088)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:581)
+at java.lang.Thread.run(Thread.java:1027)
+
+resp: 0
+stage 1 auth fail
+fixtures: url failed
+Widgets updating..
+Players finished with error = true dataChanged = false
+toast: get my squad selection: url failed
+callback failed
+widget update: points
+<Wed 29 Aug 01:24:32> Home onPause()
+Home onResume()
+<Wed 29 Aug 01:25:02> FPLService initProc: 1
+record_transfers: false
+starting my squad scrape gw 3
+getPLUserCookie
+<Wed 29 Aug 01:25:03> got plUserCookie
+getUrlStreamCore http://fantasy.premierleague.com/accounts/login/ get_auth: 0 use_auth: -1
+<Wed 29 Aug 01:25:04> url size: -1 / encoding: null / resp code: 302
+final URL: http://fantasy.premierleague.com/accounts/login/
+URL success: 302: FOUND
+getUrlStreamCore http://fantasy.premierleague.com/my-team/ get_auth: -1 use_auth: 0
+url size: -1 / encoding: gzip / resp code: 200
+final URL: http://fantasy.premierleague.com/my-team/
+URL success: 200: OK
+<Wed 29 Aug 01:25:05> capt: false sub: 0 vice_capt: false fpl_id: 226
+capt: false sub: 0 vice_capt: false fpl_id: 124
+capt: false sub: 0 vice_capt: false fpl_id: 230
+capt: false sub: 0 vice_capt: false fpl_id: 496
+capt: false sub: 0 vice_capt: false fpl_id: 423
+capt: false sub: 0 vice_capt: false fpl_id: 184
+capt: false sub: 0 vice_capt: false fpl_id: 448
+capt: true sub: 0 vice_capt: false fpl_id: 537
+capt: false sub: 0 vice_capt: false fpl_id: 546
+capt: false sub: 0 vice_capt: true fpl_id: 190
+capt: false sub: 0 vice_capt: false fpl_id: 429
+capt: false sub: 1 vice_capt: false fpl_id: 252
+capt: false sub: 2 vice_capt: false fpl_id: 89
+capt: false sub: 3 vice_capt: false fpl_id: 70
+capt: false sub: 4 vice_capt: false fpl_id: 532
+squad name: yeh banksy manager name: Mike Andrewjeski
+squad id found: 121528 (href="/entry/121528/history/">View Gameweek history</a>)
+done my squad scrape in 3.163 seconds
+starting get notes..
+getUrlStreamCore http://fantasy.premierleague.com/web/api/notes/ get_auth: -1 use_auth: 0
+url size: -1 / encoding: null / resp code: 200
+final URL: http://fantasy.premierleague.com/web/api/notes/
+URL success: 200: OK
+done get notes version in 0.279 seconds
+starting NEW players scrape
+<Wed 29 Aug 01:25:06> getUrlStreamCore http://fantasy.premierleague.com/transfers/ get_auth: -1 use_auth: 0
+url size: -1 / encoding: gzip / resp code: 200
+final URL: http://fantasy.premierleague.com/transfers/
+URL success: 200: OK
+bank: 2.8
+<Wed 29 Aug 01:25:08> ---- Szczesny (2) -------owned_perc: '103' -> '101'
+---- Vermaelen (5) -------owned_perc: '129' -> '131'
+---- Sagna (7) -------owned_perc: '2' -> '1'
+---- Gibbs (8) -------owned_perc: '40' -> '41'
+---- Jenkinson (9) -------owned_perc: '65' -> '71'
+---- Mertesacker (11) -------owned_perc: '50' -> '51'
+---- Arshavin (14) -------owned_perc: '14' -> '13'
+---- Walcott (15) -------owned_perc: '22' -> '21'
+---- Song (16) -------owned_perc: '24' -> '22'
+---- Ramsey (18) -------owned_perc: '66' -> '64'
+---- Arteta (20) -------owned_perc: '43' -> '42'
+---- Lansbury (22) -------fpl_red_flag: '0' -> '1'
+---- Lansbury (22) -------fpl_news: 'null' -> 'Joined Nottingham Forest in permanent deal on 28/8. - Unknown return date'
+widget update: vidiprinter
+---- Van Persie (26) -------owned_perc: '220' -> '227'
+---- Podolski (30) -------owned_perc: '145' -> '141'
+---- Bendtner (31) -------owned_perc: '7' -> '6'
+---- Giroud (32) -------owned_perc: '16' -> '15'
+---- Given (34) -------owned_perc: '33' -> '32'
+---- Bent (58) -------owned_perc: '22' -> '21'
+---- Cech (63) -------owned_perc: '113' -> '112'
+---- Bertrand (68) -------owned_perc: '40' -> '43'
+---- Terry (69) -------owned_perc: '78' -> '75'
+---- Ivanovic (70) -------owned_perc: '162' -> '165'
+---- Cole A (72) -------owned_perc: '214' -> '211'
+---- Ramires (76) -------owned_perc: '100' -> '96'
+---- Lampard (77) -------owned_perc: '65' -> '63'
+<Wed 29 Aug 01:25:09> ---- Mata (83) -------owned_perc: '75' -> '71'
+---- Hazard (85) -------owned_perc: '301' -> '310'
+---- Torres (89) -------owned_perc: '306' -> '308'
+---- Sturridge (90) -------owned_perc: '16' -> '15'
+---- Heitinga (94) -------owned_perc: '38' -> '37'
+---- Jagielka (95) -------owned_perc: '100' -> '102'
+---- Hibbert (96) -------fpl_yellow_flag: '0' -> '1'
+---- Hibbert (96) -------fpl_news: 'null' -> 'Unknown - 75% chance of playing'
+widget update: vidiprinter
+---- Baines (97) -------owned_perc: '127' -> '130'
+---- Fellaini (105) -------owned_perc: '162' -> '172'
+---- Neville (106) -------owned_perc: '34' -> '33'
+---- Gibson (108) -------owned_perc: '12' -> '13'
+---- Jelavic (115) -------owned_perc: '97' -> '99'
+---- Briggs (120) -------owned_perc: '6' -> '7'
+---- Hughes (123) -------owned_perc: '15' -> '16'
+---- Hangeland (124) -------owned_perc: '147' -> '146'
+---- Riise (127) -------owned_perc: '96' -> '94'
+---- Riise (127) -------fpl_yellow_flag: '0' -> '1'
+---- Riise (127) -------fpl_news: 'null' -> 'Knock - 75% chance of playing'
+widget update: vidiprinter
+---- Duff (130) -------owned_perc: '45' -> '49'
+---- Dempsey (132) -------owned_perc: '28' -> '27'
+---- Kacaniklic (137) -------owned_perc: '48' -> '50'
+---- Dembele (139) -------owned_perc: '49' -> '50'
+---- Ruiz (140) -------owned_perc: '13' -> '14'
+---- Petric (142) -------owned_perc: '104' -> '110'
+---- Reina (144) -------owned_perc: '56' -> '55'
+---- Skrtel (153) -------owned_perc: '91' -> '92'
+---- Jose Enrique (155) -------owned_perc: '71' -> '70'
+---- Downing (157) -------owned_perc: '11' -> '10'
+---- Lucas (162) -------owned_perc: '20' -> '19'
+---- Adam (163) -------owned_perc: '14' -> '13'
+---- Sterling (166) -------owned_perc: '13' -> '15'
+---- Hart (171) -------owned_perc: '123' -> '122'
+---- Lescott (176) -------owned_perc: '137' -> '135'
+---- Kompany (177) -------owned_perc: '252' -> '250'
+---- Clichy (178) -------owned_perc: '140' -> '138'
+---- Silva (183) -------owned_perc: '129' -> '126'
+---- Yaya Toure (184) -------owned_perc: '320' -> '324'
+---- Milner (187) -------owned_perc: '10' -> '9'
+---- Johnson (188) -------owned_perc: '19' -> '20'
+---- Tevez (190) -------owned_perc: '358' -> '374'
+---- Aguero (193) -------owned_perc: '90' -> '84'
+---- Jones (199) -------owned_perc: '25' -> '24'
+---- Rafael (200) -------owned_perc: '55' -> '58'
+---- Ferdinand (202) -------owned_perc: '41' -> '40'
+---- Evra (203) -------owned_perc: '101' -> '100'
+---- Valencia (206) -------owned_perc: '52' -> '51'
+---- Nani (207) -------owned_perc: '46' -> '45'
+---- Carrick (210) -------owned_perc: '23' -> '22'
+---- Kagawa (218) -------owned_perc: '174' -> '178'
+---- Hernandez (220) -------owned_perc: '12' -> '11'
+---- Rooney (221) -------owned_perc: '162' -> '145'
+---- Welbeck (222) -------owned_perc: '20' -> '19'
+---- Krul (226) -------owned_perc: '194' -> '193'
+---- Taylor R (233) -------owned_perc: '86' -> '85'
+---- Obertan (236) -------owned_perc: '29' -> '28'
+---- Ben Arfa (238) -------owned_perc: '85' -> '87'
+---- Cabaye (242) -------owned_perc: '68' -> '67'
+---- Ba (249) -------owned_perc: '170' -> '175'
+---- Martin R (255) -------owned_perc: '11' -> '10'
+---- Barnett (256) -------owned_perc: '131' -> '130'
+---- Holt (273) -------owned_perc: '66' -> '65'
+---- Cerny (278) -------owned_perc: '144' -> '143'
+---- Ferdinand (284) -------owned_perc: '71' -> '69'
+---- Nelsen (287) -------owned_perc: '21' -> '20'
+---- Park (298) -------owned_perc: '42' -> '41'
+---- Cisse (305) -------owned_perc: '22' -> '21'
+---- Federici (307) -------owned_perc: '35' -> '34'
+---- Gorkss (312) -------owned_perc: '18' -> '17'
+---- Harte (313) -------owned_perc: '30' -> '29'
+---- Guthrie (327) -------owned_perc: '61' -> '60'
+---- Pogrebnyak (332) -------owned_perc: '149' -> '146'
+---- Lallana (346) -------owned_perc: '19' -> '18'
+---- Schneiderlin (347) -------owned_perc: '3' -> '2'
+---- Lambert (353) -------owned_perc: '51' -> '50'
+---- Begovic (355) -------owned_perc: '64' -> '65'
+---- Wilkinson (359) -------owned_perc: '4' -> '5'
+---- Shawcross (360) -------owned_perc: '224' -> '222'
+---- Upson (362) -------owned_perc: '10' -> '9'
+---- Wilson (364) -------owned_perc: '4' -> '5'
+---- Whitehead (365) -------owned_perc: '26' -> '25'
+---- Etherington (367) -------owned_perc: '15' -> '14'
+---- Whelan (368) -------owned_perc: '6' -> '7'
+---- Delap (370) -------owned_perc: '7' -> '6'
+---- Walters (374) -------owned_perc: '69' -> '68'
+---- Larsson (395) -------owned_perc: '83' -> '82'
+---- Vorm (405) -------owned_perc: '189' -> '193'
+---- Rangel (411) -------owned_perc: '52' -> '58'
+---- Routledge (415) -------owned_perc: '33' -> '35'
+---- Dyer (417) -------owned_perc: '224' -> '229'
+---- Sinclair (418) -------owned_perc: '102' -> '98'
+---- Allen (419) -------owned_perc: '206' -> '204'
+---- Britton (423) -------owned_perc: '120' -> '118'
+---- Graham (429) -------owned_perc: '80' -> '81'
+---- Assou-Ekotto (436) -------owned_perc: '74' -> '75'
+---- Kaboul (437) -------owned_perc: '34' -> '33'
+---- Walker (439) -------owned_perc: '192' -> '190'
+---- Van der Vaart (445) -------owned_perc: '39' -> '38'
+---- Modric (446) -------owned_perc: '25' -> '23'
+---- Bale (448) -------owned_perc: '177' -> '175'
+---- Pienaar (456) -------owned_perc: '95' -> '98'
+---- Defoe (458) -------owned_perc: '97' -> '96'
+---- Demel (493) -------owned_perc: '43' -> '44'
+---- Tomkins (495) -------owned_perc: '21' -> '20'
+---- McCartney (496) -------owned_perc: '55' -> '56'
+---- Noble (499) -------owned_perc: '34' -> '33'
+---- Al-Habsi (508) -------owned_perc: '40' -> '42'
+---- Alcaraz (511) -------fpl_red_flag: '0' -> '1'
+---- Alcaraz (511) -------fpl_news: 'null' -> 'Suspended until 15 Sep'
+widget update: vidiprinter
+---- Figueroa (513) -------owned_perc: '48' -> '49'
+---- Gomez (519) -------owned_perc: '8' -> '7'
+---- Moses (521) -------owned_perc: '60' -> '57'
+---- Maloney (523) -------owned_perc: '6' -> '7'
+---- Beausejour (525) -------owned_perc: '2' -> '1'
+---- Di Santo (526) -------owned_perc: '21' -> '22'
+---- Gazzaniga (534) -------owned_perc: '26' -> '25'
+---- Mariappa (536) -------owned_perc: '20' -> '19'
+---- Michu (537) -------owned_perc: '226' -> '237'
+---- Oscar (539) -------owned_perc: '11' -> '10'
+---- Santi Cazorla (546) -------owned_perc: '86' -> '85'
+---- Kightly (548) -------owned_perc: '18' -> '19'
+---- Davies (575) -------owned_perc: '0' -> '1'
+wl item: 539
+wl item: 87
+wl item: 537
+wl item: 190
+wl item: 85
+wl item: 411
+wl item: 105
+wl item: 182
+wl item: 472
+wl item: 26
+player_fpl_id: 226 bought_price: 5.5
+player_fpl_id: 252 bought_price: 4.5
+player_fpl_id: 70 bought_price: 6.5
+player_fpl_id: 124 bought_price: 5.0
+player_fpl_id: 230 bought_price: 5.0
+player_fpl_id: 532 bought_price: 4.0
+player_fpl_id: 496 bought_price: 4.0
+player_fpl_id: 448 bought_price: 9.5
+player_fpl_id: 184 bought_price: 8.0
+player_fpl_id: 546 bought_price: 9.0
+player_fpl_id: 423 bought_price: 4.5
+player_fpl_id: 537 bought_price: 6.6
+player_fpl_id: 190 bought_price: 9.1
+player_fpl_id: 89 bought_price: 10.0
+player_fpl_id: 429 bought_price: 6.0
+done 143 changes on 576 players (plus 0 inserts) over 1820 lines, in 4.068 seconds
+<Wed 29 Aug 01:25:11> starting get player hist: 51 (N'Zogbia) get_season_hist = false get_match_hist = true
+getUrlStreamCore http://fantasy.premierleague.com/web/api/elements/51/ get_auth: -1 use_auth: -1
+url size: -1 / encoding: null / resp code: 200
+final URL: http://fantasy.premierleague.com/web/api/elements/51/
+URL success: 200: OK
+<Wed 29 Aug 01:25:12> done get player hist: 51 (N'Zogbia) get_season_hist = false get_match_hist = true in 0.934 seconds
+Widgets updating..
+Players finished with error = false dataChanged = true
+toast: get notes
+toast: players update
+callback ok 1
+FPLService initProc: 2
+updateLeagues justRivals=false
+starting leagues scrape
+getUrlStreamCore http://m.fantasy.premierleague.com/my-leagues/ get_auth: -1 use_auth: 0
+<Wed 29 Aug 01:25:13> url size: -1 / encoding: gzip / resp code: 200
+final URL: http://m.fantasy.premierleague.com/my-leagues/
+URL success: 200: OK
+done leagues scrape in 0.947 seconds
+starting league teams scrape for league 3123
+getUrlStreamCore http://fantasy.premierleague.com/my-leagues/3123/standings/ get_auth: -1 use_auth: -1
+<Wed 29 Aug 01:25:14> url size: -1 / encoding: gzip / resp code: 200
+final URL: http://fantasy.premierleague.com/my-leagues/3123/standings/
+URL success: 200: OK
+Mate gw: 63 total: 156
+yeh banksy gw: 80 total: 156
+The Goon Squad gw: 81 total: 149
+The Big Lewandowski gw: 73 total: 149
+storing total: 149
+Top Goon gw: 77 total: 144
+storing total: 144
+Emirate Strikers gw: 66 total: 142
+storing total: 142
+Metal Jawa FC gw: 72 total: 138
+storing total: 138
+Oxlade Fade gw: 76 total: 132
+storing total: 132
+DcTalkz FC gw: 52 total: 128
+storing total: 128
+Charlie Crokers Tour gw: 77 total: 127
+storing total: 127
+Enter Your Team Name gw: 57 total: 127
+storing total: 127
+Petraki's Goonerz gw: 46 total: 122
+storing total: 122
+Vermination gw: 50 total: 118
+storing total: 118
+Arsenal Londyn gw: 46 total: 117
+storing total: 117
+1886 AFC gw: 72 total: 114
+storing total: 114
+brother sam gw: 53 total: 114
+storing total: 114
+FuturesArsenal gw: 50 total: 114
+storing total: 114
+Another Fine Mess gw: 64 total: 114
+storing total: 114
+Gooner 93 gw: 41 total: 113
+storing total: 113
+Drumcode's Army gw: 51 total: 113
+storing total: 113
+WonderkidsXI gw: 58 total: 109
+storing total: 109
+SD Quaztolla gw: 57 total: 108
+storing total: 108
+Ashburton Groove gw: 44 total: 105
+storing total: 105
+Poverty FC gw: 54 total: 103
+storing total: 103
+Fifty Shades of Grey gw: 73 total: 103
+storing total: 103
+Plan-B gw: 58 total: 102
+storing total: 102
+verticalfailure f.c. gw: 46 total: 102
+storing total: 102
+Dial Square gw: 43 total: 100
+storing total: 100
+Fact Hunt gw: 57 total: 98
+storing total: 98
+Gooner win gw: 53 total: 98
+storing total: 98
+Bun Dippers gw: 44 total: 98
+storing total: 98
+SuperMitz gw: 46 total: 97
+storing total: 97
+Prime gw: 42 total: 96
+storing total: 96
+kentooot puek gw: 33 total: 95
+storing total: 95
+insert minileague_team 1857306: my little smashers (Craig Duarte)
+my little smashers gw: 54 total: 94
+insert squad 1857306: my little smashers (Craig Duarte)
+storing total: 94
+Mos Def II gw: 54 total: 93
+storing total: 93
+WRB gw: 35 total: 90
+storing total: 90
+InsertTeamNameHere gw: 53 total: 90
+storing total: 90
+Tomahawks gw: 36 total: 90
+storing total: 90
+Afcbanana gw: 33 total: 88
+storing total: 88
+Spanky's Men. gw: 42 total: 85
+storing total: 85
+The Verminators gw: 32 total: 85
+storing total: 85
+morrisc gw: 38 total: 83
+storing total: 83
+insert minileague_team 1977211: Wilshere#10 (Antonio Pjevic)
+Wilshere#10 gw: 80 total: 80
+insert squad 1977211: Wilshere#10 (Antonio Pjevic)
+storing total: 80
+insert minileague_team 770176: Dantastics2012 (Dan McGrath)
+Dantastics2012 gw: 49 total: 80
+insert squad 770176: Dantastics2012 (Dan McGrath)
+storing total: 80
+insert minileague_team 1034324: Spandau Ballet (Jason McLeod)
+Spandau Ballet gw: 45 total: 77
+insert squad 1034324: Spandau Ballet (Jason McLeod)
+storing total: 77
+Arsenal Wanderers gw: 36 total: 77
+storing total: 77
+insert minileague_team 1382518: MJV FC (will warner)
+MJV FC gw: 40 total: 75
+insert squad 1382518: MJV FC (will warner)
+storing total: 75
+rock bottom gw: 35 total: 75
+storing total: 75
+removing 67158 from 3123
+removing 477807 from 3123
+removing 1060380 from 3123
+removing 754258 from 3123
+removing 114938 from 3123
+removing 925253 from 3123
+done league teams scrape in 1.2 seconds
+starting league teams scrape for league 107804
+getUrlStreamCore http://fantasy.premierleague.com/my-leagues/107804/standings/ get_auth: -1 use_auth: -1
+<Wed 29 Aug 01:25:15> url size: -1 / encoding: gzip / resp code: 200
+final URL: http://fantasy.premierleague.com/my-leagues/107804/standings/
+URL success: 200: OK
+yeh banksy gw: 80 total: 156
+fracos mas bons gw: 70 total: 148
+FYI gw: 94 total: 146
+Blue Moon FC gw: 71 total: 145
+aguero é vedeta gw: 67 total: 137
+Tampa Bay Rowdies gw: 79 total: 135
+I GET PAID FOR THIS! gw: 79 total: 131
+opteka gw: 59 total: 126
+nasri é vedeta gw: 37 total: 116
+pequeno d.luis gw: 68 total: 112
+Womchester United gw: 65 total: 112
+Hillside blue gw: 50 total: 103
+Gooner4life gw: 59 total: 102
+gelado heldiportas gw: 46 total: 96
+Snowball's Chance gw: 51 total: 94
+BangBangBottomBurps gw: 44 total: 92
+man city gw: 45 total: 92
+Goon Squad Lords gw: 46 total: 90
+Hit It and Quit It gw: 47 total: 79
+storing total: 79
+Super Smoggies gw: 30 total: 64
+storing total: 64
+done league teams scrape in 0.705 seconds
+starting league teams scrape for league 342293
+getUrlStreamCore http://fantasy.premierleague.com/my-leagues/342293/standings/ get_auth: -1 use_auth: -1
+url size: -1 / encoding: gzip / resp code: 200
+final URL: http://fantasy.premierleague.com/my-leagues/342293/standings/
+URL success: 200: OK
+<Wed 29 Aug 01:25:16> yeh banksy gw: 80 total: 156
+Norfolk Enchants gw: 74 total: 143
+Zamora I Learn gw: 42 total: 111
+done league teams scrape in 0.509 seconds
+updateSquad 791 gw 1
+updateSquad 791 gw 2
+updateSquad 9621 gw 1
+updateSquad 9621 gw 2
+updateSquad 32966 gw 1
+updateSquad 32966 gw 2
+updateSquad 121528 gw 1
+updateSquad 121528 gw 2
+updateSquad 126012 gw 1
+updateSquad 126012 gw 2
+updateSquad 158121 gw 1
+updateSquad 158121 gw 2
+updateSquad 253109 gw 1
+updateSquad 253109 gw 2
+updateSquad 259428 gw 1
+updateSquad 259428 gw 2
+updateSquad 379120 gw 1
+updateSquad 379120 gw 2
+updateSquad 405328 gw 1
+updateSquad 405328 gw 2
+updateSquad 405354 gw 1
+updateSquad 405354 gw 2
+updateSquad 405390 gw 1
+updateSquad 405390 gw 2
+updateSquad 405435 gw 1
+updateSquad 405435 gw 2
+updateSquad 405436 gw 1
+updateSquad 405436 gw 2
+updateSquad 405448 gw 1
+updateSquad 405448 gw 2
+updateSquad 405455 gw 1
+updateSquad 405455 gw 2
+updateSquad 405473 gw 1
+updateSquad 405473 gw 2
+updateSquad 405495 gw 1
+updateSquad 405495 gw 2
+updateSquad 405521 gw 1
+updateSquad 405521 gw 2
+updateSquad 405536 gw 1
+updateSquad 405536 gw 2
+updateSquad 531889 gw 1
+updateSquad 531889 gw 2
+updateSquad 612516 gw 1
+updateSquad 612516 gw 2
+starting updateSquadGameweekScores gw 2
+total: 80 - 11 + 42
+squad 791 gameweek score: 42
+<Wed 29 Aug 01:25:17> autosub: null (178) -> null (288)
+autosub: null (202) -> null (256)
+total: 124 - 56 + 81
+squad 9621 gameweek score: 81
+total: 122 - 48 + 71
+squad 32966 gameweek score: 71
+total: 132 - 56 + 80
+squad 121528 gameweek score: 80
+widget update: points
+autosub: null (399) -> null (419)
+total: 84 - 41 + 51
+squad 126012 gameweek score: 51
+autosub: null (176) -> null (120)
+total: 121 - 65 + 79
+squad 158121 gameweek score: 79
+autosub: null (389) -> null (175)
+total: 112 - 43 + 74
+squad 253109 gameweek score: 74
+autosub: null (176) -> null (493)
+autosub: null (389) -> null (124)
+total: 96 - 49 + 65
+squad 259428 gameweek score: 65
+autosub: null (521) -> null (32)
+total: 79 - 35 + 46
+squad 379120 gameweek score: 46
+autosub: null (69) -> null (423)
+autosub: null (178) -> null (288)
+total: 75 - 31 + 68
+squad 405328 gameweek score: 68
+autosub: null (178) -> null (91)
+total: 110 - 58 + 79
+squad 405354 gameweek score: 79
+autosub: null (69) -> null (80)
+total: 73 - 23 + 46
+squad 405390 gameweek score: 46
+<Wed 29 Aug 01:25:18> autosub: null (40) -> null (407)
+total: 73 - 26 + 45
+squad 405435 gameweek score: 45
+total: 84 - 41 + 59
+squad 405436 gameweek score: 59
+total: 107 - 37 + 67
+squad 405448 gameweek score: 67
+autosub: null (418) -> null (45)
+total: 72 - 19 + 50
+squad 405455 gameweek score: 50
+total: 88 - 40 + 44
+squad 405473 gameweek score: 44
+autosub: null (389) -> null (8)
+total: 126 - 48 + 70
+squad 405495 gameweek score: 70
+autosub: null (2) -> null (508)
+total: 113 - 61 + 94
+squad 405521 gameweek score: 94
+autosub: null (69) -> null (423)
+autosub: null (389) -> null (256)
+total: 92 - 13 + 37
+squad 405536 gameweek score: 37
+autosub: null (178) -> null (241)
+autosub: null (202) -> null (153)
+total: 106 - 39 + 59
+squad 531889 gameweek score: 59
+autosub: null (127) -> null (166)
+total: 120 - 27 + 63
+squad 612516 gameweek score: 63
+done updateSquadGameweekScores gw 2 in 1.951 seconds
+Widgets updating..
+Leagues finished with error = false dataChanged = true
+toast: get league teams
+callback ok 2
+<Wed 29 Aug 01:25:28> Home onPause()
+<Wed 29 Aug 01:25:29> Selection::load()
+Selection onResume()
+populateGrid()
+done populateGrid() in 0.131 seconds
+<Wed 29 Aug 01:25:33> populateGrid()
+done populateGrid() in 0.002 seconds
+<Wed 29 Aug 01:25:34> populateGrid()
+done populateGrid() in 0.003 seconds
+<Wed 29 Aug 01:25:36> populateGrid()
+done populateGrid() in 0.004 seconds
+<Wed 29 Aug 01:25:37> Selection onPause()
+squad_string: 70, 89, 124, 184, 190, 226, 230, 252, 423, 429, 448, 496, 532, 537, 546
+teams_string: null
+max: 13.3 min: 4.0 default: 7.3
+k
+Players::popList()
+Players onResume()
+<Wed 29 Aug 01:25:40> Players onPause()
+squad_string: 70, 89, 124, 184, 190, 226, 230, 252, 423, 429, 448, 496, 532, 537, 546
+teams_string: null
+max: 13.3 min: 4.0 default: 7.3
+k
+Players::popList()
+Players onResume()
+<Wed 29 Aug 01:25:42> menu: 2131100001
+<Wed 29 Aug 01:25:44> menu: 0
+<Wed 29 Aug 01:25:46> menu: 2006
+subclass
+i
+Players::popList()
+<Wed 29 Aug 01:26:00> menu: 2131100001
+<Wed 29 Aug 01:26:26> Players onPause()
+<Wed 29 Aug 01:26:27> Selection: restoring pre-rotation squad
+populateGrid()
+done populateGrid() in 0.103 seconds
+populateGrid()
+done populateGrid() in 0.068 seconds
+Selection onResume()
+<Wed 29 Aug 01:26:31> starting transfer squad ids get
+getUrlStreamCore http://fantasy.premierleague.com/transfers/ get_auth: -1 use_auth: 0
+<Wed 29 Aug 01:26:32> url size: -1 / encoding: gzip / resp code: 200
+final URL: http://fantasy.premierleague.com/transfers/
+URL success: 200: OK
+token: NP8DQx2956pCMx6i0GvFNP5cKGtZkPTD
+sell price: 55
+fpl id: 226 element: 1822906 index: 0 sell price: 55
+sell price: 45
+fpl id: 252 element: 1822907 index: 1 sell price: 45
+sell price: 66
+fpl id: 70 element: 1822908 index: 2 sell price: 66
+sell price: 50
+fpl id: 124 element: 1822909 index: 3 sell price: 50
+sell price: 50
+fpl id: 230 element: 1822910 index: 4 sell price: 50
+sell price: 40
+fpl id: 532 element: 1822911 index: 5 sell price: 40
+sell price: 40
+fpl id: 496 element: 1822913 index: 6 sell price: 40
+sell price: 95
+fpl id: 448 element: 1822915 index: 7 sell price: 95
+sell price: 80
+fpl id: 184 element: 1822917 index: 8 sell price: 80
+sell price: 90
+fpl id: 546 element: 1822919 index: 9 sell price: 90
+sell price: 45
+fpl id: 423 element: 1822920 index: 10 sell price: 45
+sell price: 68
+fpl id: 537 element: 1822922 index: 11 sell price: 68
+sell price: 93
+fpl id: 190 element: 1822924 index: 12 sell price: 93
+sell price: 100
+fpl id: 89 element: 1822926 index: 13 sell price: 100
+sell price: 60
+fpl id: 429 element: 1822928 index: 14 sell price: 60
+done transfer squad ids in 0.962 seconds
+in: 166(3)
+out: 423(3)
+new
+0: 226
+1: 252
+2: 70
+3: 124
+4: 230
+5: 532
+6: 496
+7: 448
+8: 184
+9: 546
+10: 166
+11: 537
+12: 190
+13: 89
+14: 429
+starting fpl confirmation info get
+getUrlStreamCore http://fantasy.premierleague.com/transfers/confirm/ get_auth: -1 use_auth: 0
+posting: csrfmiddlewaretoken=NP8DQx2956pCMx6i0GvFNP5cKGtZkPTD&transfers_form-event_id=3&transfers_form-confirmed=True&transfers_form-wildcard=&pick_formset-TOTAL_FORMS=15&pick_formset-INITIAL_FORMS=15&pick_formset-MAX_NUM_FORMS=15&pick_formset-0-element=226&pick_formset-0-purchase_price=&pick_formset-0-selling_price=55&pick_formset-0-id=1822906&pick_formset-1-element=252&pick_formset-1-purchase_price=&pick_formset-1-selling_price=45&pick_formset-1-id=1822907&pick_formset-2-element=70&pick_formset-2-purchase_price=&pick_formset-2-selling_price=66&pick_formset-2-id=1822908&pick_formset-3-element=124&pick_formset-3-purchase_price=&pick_formset-3-selling_price=50&pick_formset-3-id=1822909&pick_formset-4-element=230&pick_formset-4-purchase_price=&pick_formset-4-selling_price=50&pick_formset-4-id=1822910&pick_formset-5-element=532&pick_formset-5-purchase_price=&pick_formset-5-selling_price=40&pick_formset-5-id=1822911&pick_formset-6-element=496&pick_formset-6-purchase_price=&pick_formset-6-selling_price=40&pick_formset-6-id=1822912&pick_formset-7-element=448&pick_formset-7-purchase_price=&pick_formset-7-selling_price=95&pick_formset-7-id=1822913&pick_formset-8-element=184&pick_formset-8-purchase_price=&pick_formset-8-selling_price=80&pick_formset-8-id=1822914&pick_formset-9-element=546&pick_formset-9-purchase_price=&pick_formset-9-selling_price=90&pick_formset-9-id=1822915&pick_formset-10-element=166&pick_formset-10-purchase_price=45&pick_formset-10-selling_price=45&pick_formset-10-id=1822916&pick_formset-11-element=537&pick_formset-11-purchase_price=&pick_formset-11-selling_price=68&pick_formset-11-id=1822917&pick_formset-12-element=190&pick_formset-12-purchase_price=&pick_formset-12-selling_price=93&pick_formset-12-id=1822918&pick_formset-13-element=89&pick_formset-13-purchase_price=&pick_formset-13-selling_price=100&pick_formset-13-id=1822919&pick_formset-14-element=429&pick_formset-14-purchase_price=&pick_formset-14-selling_price=60&pick_formset-14-id=1822920
+<Wed 29 Aug 01:26:33> url size: -1 / encoding: null / resp code: 302
+final URL: http://fantasy.premierleague.com/transfers/confirm/
+Game is updating
+URL fail: 302: FOUND
+fpl confirmation info: url failed
+done fpl confirmation info in 0.68 seconds
+Error: in/out don't look correct
+no FPL message
+Transfer error: null
+<Wed 29 Aug 01:26:45> menu: 2131100007
+Selection onPause()
+<Wed 29 Aug 01:27:23> adding diags...

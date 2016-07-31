@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:background="@drawable/list_item_gradient" >
+	<TextView android:id="@+id/title" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:textSize="21sp"
+		android:gravity="left" android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true" android:textColor="#FFFF00" />
+	<TextView android:id="@+id/description" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:textSize="17sp"
+		android:gravity="left" android:layout_alignParentLeft="true"
+		android:layout_below="@+id/title" android:textColor="#FFFFFF" 
+		android:paddingLeft="20sp" />
+</RelativeLayout>

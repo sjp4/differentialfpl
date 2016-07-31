@@ -1,0 +1,143 @@
+java.lang.IllegalStateException: attempt to re-open an already-closed object: android.database.sqlite.SQLiteQuery (mSql = SELECT _id, team_home_id, team_away_id, res_goals_home, res_goals_away, datetime, got_bonus FROM fixture WHERE season = 13 AND gameweek = 11 ORDER BY datetime ASC)
+at android.database.sqlite.SQLiteClosable.acquireReference(SQLiteClosable.java:33)
+at android.database.sqlite.SQLiteQuery.fillWindow(SQLiteQuery.java:67)
+at android.database.sqlite.SQLiteCursor.fillWindow(SQLiteCursor.java:314)
+at android.database.sqlite.SQLiteCursor.getCount(SQLiteCursor.java:284)
+at android.widget.CursorAdapter.getCount(CursorAdapter.java:132)
+at android.widget.HeaderViewListAdapter.getCount(HeaderViewListAdapter.java:132)
+at android.widget.ListView.setAdapter(ListView.java:455)
+at com.pennas.fpl.an.a(SourceFile:126)
+at com.pennas.fpl.an.onPostExecute(SourceFile:1)
+at android.os.AsyncTask.finish(AsyncTask.java:417)
+at android.os.AsyncTask.access$300(AsyncTask.java:127)
+at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:429)
+at android.os.Handler.dispatchMessage(Handler.java:99)
+at android.os.Looper.loop(Looper.java:150)
+at android.app.ActivityThread.main(ActivityThread.java:4293)
+at java.lang.reflect.Method.invokeNative(Native Method)
+at java.lang.reflect.Method.invoke(Method.java:507)
+at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:839)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:597)
+at dalvik.system.NativeStart.main(Native Method)
+
+<Sat 10 Nov 17:49:10> Matches onResume()
+<Sat 10 Nov 17:49:11> Matches onPause()
+onPreExecute()
+Matches onResume()
+Matches onPause()
+<Sat 10 Nov 17:49:12> onPreExecute()
+Matches onResume()
+
+
+
+
+java.lang.IllegalStateException: attempt to re-open an already-closed object: android.database.sqlite.SQLiteQuery (mSql = SELECT _id, team_home_id, team_away_id, res_goals_home, res_goals_away, datetime, got_bonus FROM fixture WHERE season = 13 AND gameweek = 12 ORDER BY datetime ASC)
+at android.database.sqlite.SQLiteClosable.acquireReference(SQLiteClosable.java:33)
+at android.database.sqlite.SQLiteQuery.fillWindow(SQLiteQuery.java:67)
+at android.database.sqlite.SQLiteCursor.fillWindow(SQLiteCursor.java:314)
+at android.database.sqlite.SQLiteCursor.getCount(SQLiteCursor.java:284)
+at android.widget.CursorAdapter.getCount(CursorAdapter.java:132)
+at android.widget.HeaderViewListAdapter.getCount(HeaderViewListAdapter.java:132)
+at android.widget.ListView.setAdapter(ListView.java:455)
+at com.pennas.fpl.an.a(SourceFile:126)
+at com.pennas.fpl.an.onPostExecute(SourceFile:1)
+at android.os.AsyncTask.finish(AsyncTask.java:417)
+at android.os.AsyncTask.access$300(AsyncTask.java:127)
+at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:429)
+at android.os.Handler.dispatchMessage(Handler.java:99)
+at android.os.Looper.loop(Looper.java:150)
+at android.app.ActivityThread.main(ActivityThread.java:4293)
+at java.lang.reflect.Method.invokeNative(Native Method)
+at java.lang.reflect.Method.invoke(Method.java:507)
+at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:839)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:597)
+at dalvik.system.NativeStart.main(Native Method)
+
+<Sat 17 Nov 12:47:18> url size: 1326 / encoding: gzip / resp code: 200
+final URL: http://fantasy.premierleague.com/fixture/111/
+URL success: 200: OK
+onPreExecute()
+Matches onResume()
+Matches onPause()
+Home: 'Arsenal' 0 Away: 'Tottenham' 0
+Home id: 1 Away id: 16
+loadPlayers..
+onPreExecute()
+Matches onResume()
+home = true
+home = false
+<Sat 17 Nov 12:47:19> adding diags...
+done match stats 111 scrape in 1.896 seconds
+starting updateSquadGameweekScores gw 12
+
+
+
+
+java.lang.IllegalStateException: attempt to re-open an already-closed object: android.database.sqlite.SQLiteQuery (mSql = SELECT _id, team_home_id, team_away_id, res_goals_home, res_goals_away, datetime, got_bonus FROM fixture WHERE season = 13 AND gameweek = 14 ORDER BY datetime ASC)
+at android.database.sqlite.SQLiteClosable.acquireReference(SQLiteClosable.java:33)
+at android.database.sqlite.SQLiteQuery.fillWindow(SQLiteQuery.java:67)
+at android.database.sqlite.SQLiteCursor.fillWindow(SQLiteCursor.java:314)
+at android.database.sqlite.SQLiteCursor.getCount(SQLiteCursor.java:284)
+at android.widget.CursorAdapter.getCount(CursorAdapter.java:132)
+at android.widget.HeaderViewListAdapter.getCount(HeaderViewListAdapter.java:132)
+at android.widget.ListView.setAdapter(ListView.java:455)
+at com.pennas.fpl.an.a(SourceFile:126)
+at com.pennas.fpl.an.onPostExecute(SourceFile:1)
+at android.os.AsyncTask.finish(AsyncTask.java:417)
+at android.os.AsyncTask.access$300(AsyncTask.java:127)
+at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:429)
+at android.os.Handler.dispatchMessage(Handler.java:99)
+at android.os.Looper.loop(Looper.java:150)
+at android.app.ActivityThread.main(ActivityThread.java:4293)
+at java.lang.reflect.Method.invokeNative(Native Method)
+at java.lang.reflect.Method.invoke(Method.java:507)
+at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:839)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:597)
+at dalvik.system.NativeStart.main(Native Method)
+
+Matches onPause()
+subclass
+<Tue 27 Nov 20:02:36> Matches onResume()
+<Tue 27 Nov 20:02:37> Matches onPause()
+onPreExecute()
+Matches onResume()
+Matches onPause()
+<Tue 27 Nov 20:02:38> onPreExecute()
+Matches onResume()
+adding diags...
+
+
+
+
+
+
+
+java.lang.IllegalStateException: attempt to re-open an already-closed object: android.database.sqlite.SQLiteQuery (mSql = SELECT _id, team_home_id, team_away_id, res_goals_home, res_goals_away, datetime, got_bonus FROM fixture WHERE season = 13 AND gameweek = 16 ORDER BY datetime ASC)
+at android.database.sqlite.SQLiteClosable.acquireReference(SQLiteClosable.java:33)
+at android.database.sqlite.SQLiteQuery.fillWindow(SQLiteQuery.java:67)
+at android.database.sqlite.SQLiteCursor.fillWindow(SQLiteCursor.java:314)
+at android.database.sqlite.SQLiteCursor.getCount(SQLiteCursor.java:284)
+at android.widget.CursorAdapter.getCount(CursorAdapter.java:132)
+at android.widget.HeaderViewListAdapter.getCount(HeaderViewListAdapter.java:132)
+at android.widget.ListView.setAdapter(ListView.java:455)
+at com.pennas.fpl.an.a(SourceFile:126)
+at com.pennas.fpl.an.onPostExecute(SourceFile:1)
+at android.os.AsyncTask.finish(AsyncTask.java:417)
+at android.os.AsyncTask.access$300(AsyncTask.java:127)
+at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:429)
+at android.os.Handler.dispatchMessage(Handler.java:99)
+at android.os.Looper.loop(Looper.java:150)
+at android.app.ActivityThread.main(ActivityThread.java:4293)
+at java.lang.reflect.Method.invokeNative(Native Method)
+at java.lang.reflect.Method.invoke(Method.java:507)
+at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:839)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:597)
+at dalvik.system.NativeStart.main(Native Method)
+
+
+
+
+
+
+
+

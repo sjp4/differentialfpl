@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<!-- <PreferenceCategory android:title="FPL logon details" android:summary="fantasy.premierleague.com 
+		login details"> <EditTextPreference android:title="Email" android:key="FPLEmail" 
+		/> <com.pennas.fpl.ui.PasswordPreference android:title="Password" android:key="FPLPassword" 
+		android:password="true" /> </PreferenceCategory> -->
+	<PreferenceCategory android:title="Sync"
+		android:summary="fantasy.premierleague.com login details">
+		<CheckBoxPreference android:title="Update Data Automatically"
+			android:defaultValue="false"
+			android:summary="Update data from Fantasy Premier League on a reguar basis"
+			android:key="update_data" />
+		<PreferenceScreen android:key="FirstPrefScreen"
+			android:title="Sync" android:summary="Frequency of updates"
+			android:dependency="update_data">
+			<ListPreference android:title="Players" android:key="update_players"
+				android:defaultValue="1" android:entries="@array/pref_update_players"
+				android:entryValues="@array/pref_update_players_val" />
+			<ListPreference android:title="Scores/Points"
+				android:key="update_scores" android:defaultValue="5"
+				android:entries="@array/pref_update_scores" android:entryValues="@array/pref_update_scores_val" />
+			<ListPreference android:title="Rival Squads"
+				android:key="update_squads" android:defaultValue="1"
+				android:entries="@array/pref_update_squads" android:entryValues="@array/pref_update_squads_val" />
+		</PreferenceScreen>
+		<CheckBoxPreference android:title="Start On Boot"
+			android:defaultValue="false"
+			android:summary="Start background service (for automatic updates) on boot"
+			android:key="start_on_boot" android:dependency="update_data" />
+		<CheckBoxPreference android:title="Wake Device"
+			android:defaultValue="true" android:summary="Wake device/service when updates due"
+			android:key="wake" android:dependency="update_data" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="Notifications"
+		android:summary="Status bar notifications on FPL events">
+		<PreferenceScreen android:key="SecondPrefScreen"
+			android:title="Notifications" android:summary="Set notification preferences">
+			<PreferenceCategory android:title="Scoring">
+				<ListPreference android:title="Goals" android:key="notif_goal"
+					android:defaultValue="1" android:entries="@array/pref_notif"
+					android:entryValues="@array/pref_notif_val" />
+				<ListPreference android:title="Assists" android:key="notif_assist"
+					android:defaultValue="1" android:entries="@array/pref_notif"
+					android:entryValues="@array/pref_notif_val" />
+				<ListPreference android:title="Red Cards"
+					android:key="notif_red" android:defaultValue="1" android:entries="@array/pref_notif"
+					android:entryValues="@array/pref_notif_val" />
+				<CheckBoxPreference android:title="Sound"
+					android:defaultValue="false" android:summary="Alert with sound?"
+					android:key="notif_sound_scoring" />
+			</PreferenceCategory>
+			<PreferenceCategory android:title="Alerts">
+				<CheckBoxPreference android:title="Deadline Alert"
+					android:defaultValue="true" android:summary="Alert 30 minutes before gameweek deadline"
+					android:key="notif_deadline" />
+				<CheckBoxPreference android:title="Kick-Off"
+					android:defaultValue="false" android:summary="Notify when a match kicks off"
+					android:key="notif_kickoff" />
+				<CheckBoxPreference android:title="Final Whistle"
+					android:defaultValue="false" android:summary="Notify when a match finishes"
+					android:key="notif_finalwhistle" />
+				<CheckBoxPreference android:title="Sound"
+					android:defaultValue="false" android:summary="Alert with sound?"
+					android:key="notif_sound_alerts" />
+			</PreferenceCategory>
+			<PreferenceCategory android:title="Other">
+				<CheckBoxPreference android:title="Rival Transfer"
+					android:defaultValue="false"
+					android:summary="When rivals makes a transfer (alerted after deadline)"
+					android:key="notif_transfer" />
+				<ListPreference android:title="Price Change"
+					android:key="notif_price" android:defaultValue="3"
+					android:entries="@array/pref_notif_price" android:entryValues="@array/pref_notif_price_val" />
+			</PreferenceCategory>
+		</PreferenceScreen>
+	</PreferenceCategory>
+	<PreferenceCategory android:title="Statistics"
+		android:summary="Select which statistics are displayed">
+		<PreferenceScreen android:key="ThirdPrefScreen"
+			android:title="Statistics" android:summary="Select which statistics are displayed">
+			<PreferenceScreen android:key="FourthPrefScreen"
+				android:title="Players" android:summary="Select which player statistics are displayed">
+			</PreferenceScreen>
+			<PreferenceScreen android:key="FifthPrefScreen"
+				android:title="Teams" android:summary="Select which team statistics are displayed">
+			</PreferenceScreen>
+		</PreferenceScreen>
+		<CheckBoxPreference android:title="Live Bonus Points"
+			android:defaultValue="true"
+			android:summary="Update bonus points while matches are in progress"
+			android:key="live_bonus" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="Misc"
+		android:key="misc">
+		<Preference android:title="Send diagnostics"
+			android:summary="Send diagnostic information to the developer to help solve any issues"
+			android:key="diags" android:dependency="acra.enable" />
+		<CheckBoxPreference android:key="acra.enable"
+			android:title="Send crash reports"
+			android:summary="Send a report to the developer if Differential crashes - this will help to fix the problem, and includes your FPL email address"
+			android:defaultValue="true" />
+		<CheckBoxPreference android:key="check_for_updates"
+			android:title="Check for updates"
+			android:summary="Check for new verions of Differential when they become available"
+			android:defaultValue="true" />
+		<CheckBoxPreference android:title="Alternate ticker colours"
+			android:defaultValue="false"
+			android:summary="Use different colours for Tickers"
+			android:key="alternate_ticker_colours" />
+	</PreferenceCategory>
+</PreferenceScreen>

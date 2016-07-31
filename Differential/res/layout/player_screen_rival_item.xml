@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content" >
+
+	<TextView android:id="@+id/captain" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+		android:layout_gravity="center_horizontal"
+		android:gravity="center_horizontal" android:textColor="#FFFF00"
+		android:textSize="18sp" android:width="20sp" />
+
+	<ImageView android:id="@+id/autosubicon"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true" android:layout_below="@+id/captain"
+		android:contentDescription="Autosub" />
+
+	<TextView android:id="@+id/teamname" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:textSize="19sp"
+		android:gravity="left" android:layout_toRightOf="@+id/captain"
+		android:layout_alignParentTop="true" />
+
+	<TextView android:id="@+id/playername" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:textSize="17sp"
+		android:layout_below="@+id/teamname" android:textColor="#FFFFFF"
+		android:gravity="center_vertical" android:layout_gravity="center_vertical"
+		android:layout_toRightOf="@+id/captain" />
+
+	<TextView android:id="@+id/boughtsold" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:textSize="17sp"
+		android:layout_below="@+id/playername" android:gravity="center_vertical"
+		android:layout_gravity="center_vertical" android:layout_toRightOf="@+id/captain"
+		android:visibility="gone" />
+
+</RelativeLayout>

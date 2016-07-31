@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:orientation="horizontal" android:paddingTop="1sp"
+	android:paddingBottom="1sp" android:background="@drawable/list_item_gradient">
+	<RelativeLayout android:id="@+id/highlight"
+		android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" >
+		<TextView android:id="@+id/gameweek" android:layout_width="wrap_content"
+			android:layout_height="fill_parent" android:textSize="18sp"
+			android:width="20sp" android:layout_gravity="center_horizontal"
+			android:gravity="center_horizontal" android:layout_alignParentLeft="true"
+			android:layout_alignParentTop="true" />
+		<ImageView android:id="@+id/shirtPic" android:layout_width="35sp"
+			android:layout_height="wrap_content" android:scaleType="fitXY"
+			android:adjustViewBounds="true" android:contentDescription="Shirt"
+			android:layout_toRightOf="@+id/gameweek" />
+	</RelativeLayout>
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<com.pennas.fpl.ui.Worm android:id="@+id/worm"
+			android:layout_width="fill_parent" android:layout_height="17sp"
+			android:padding="0dp" android:layout_alignParentTop="true" />
+		<TextView android:id="@+id/teamName" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+			android:layout_below="@+id/worm" />
+		<TextView android:id="@+id/result" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_below="@+id/worm"
+			android:layout_toRightOf="@+id/teamName" />
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Fix"
+			android:layout_below="@+id/worm" android:layout_toLeftOf="@+id/tickerDiff" />
+		<com.pennas.fpl.ui.Ticker android:id="@+id/tickerDiff"
+			android:layout_width="20sp" android:layout_height="16sp"
+			android:padding="0dp" android:layout_below="@+id/worm"
+			android:layout_toLeftOf="@+id/tickerAttLab" />
+		<TextView android:id="@+id/tickerAttLab"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:text="Att" android:layout_below="@+id/worm"
+			android:layout_toLeftOf="@+id/tickerAtt" />
+		<com.pennas.fpl.ui.Ticker android:id="@+id/tickerAtt"
+			android:layout_width="20sp" android:layout_height="16sp"
+			android:padding="0dp" android:layout_below="@+id/worm"
+			android:layout_toLeftOf="@+id/tickerCSLab" />
+		<TextView android:id="@+id/tickerCSLab" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="CS"
+			android:layout_below="@+id/worm" android:layout_toLeftOf="@+id/tickerCS" />
+		<com.pennas.fpl.ui.Ticker android:id="@+id/tickerCS"
+			android:layout_width="20sp" android:layout_height="16sp"
+			android:padding="0dp" android:layout_below="@+id/worm"
+			android:layout_alignParentRight="true" />
+	</RelativeLayout>
+</LinearLayout>

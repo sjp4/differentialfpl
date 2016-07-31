@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+	<!-- all of top -->
+	<RelativeLayout android:id="@+id/widget_top"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_alignParentTop="true" android:background="@drawable/widget_vidi_gradient">
+
+		<!-- right hand side: points -->
+		<TextView android:id="@+id/widget_gw_score"
+			android:layout_height="wrap_content" android:textSize="28sp"
+			android:layout_width="wrap_content" android:textColor="#FFFFFF"
+			android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+			android:paddingTop="0sp" android:gravity="top"
+			android:layout_gravity="top" android:paddingRight="3sp"
+			android:paddingLeft="5sp" />
+
+		<!-- switch -->
+		<ImageView android:id="@+id/widget_switch" android:src="@drawable/ic_menu_agenda"
+			android:contentDescription="Switch content" android:layout_width="32sp"
+			android:layout_height="32sp" android:scaleType="fitXY"
+			android:adjustViewBounds="true" android:layout_alignParentTop="true"
+			android:layout_toLeftOf="@+id/widget_gw_score" />
+
+		<!-- left hand side: logo -->
+		<ImageView android:id="@+id/widget_logo"
+			android:layout_height="38sp" android:layout_width="38sp"
+			android:src="@drawable/differential" android:contentDescription="Differential logo"
+			android:scaleType="fitXY" android:adjustViewBounds="true"
+			android:layout_marginRight="2sp" android:layout_alignParentTop="true"
+			android:layout_alignParentLeft="true" android:layout_marginLeft="2sp" />
+
+		<!-- top: title -->
+		<TextView android:id="@+id/widget_title"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:textSize="16sp" android:layout_alignParentTop="true"
+			android:layout_toRightOf="@+id/widget_logo"
+			android:layout_marginBottom="0sp" android:paddingBottom="0sp"
+			android:layout_marginTop="-2sp" android:textScaleX="0.95" />
+
+		<!-- middle: infobar icons/text -->
+		<LinearLayout android:id="@+id/widget_infobar"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_toRightOf="@+id/widget_logo" android:layout_below="@+id/widget_title"
+			android:layout_marginTop="-2sp" android:paddingLeft="2sp"
+			android:paddingTop="0sp" android:paddingRight="2sp"
+			android:paddingBottom="0sp" android:gravity="top"
+			android:layout_gravity="top">
+			<ImageView android:id="@+id/widget_goals_img"
+				android:layout_width="19sp" android:layout_height="19sp"
+				android:src="@drawable/notif_goal" android:scaleType="fitXY"
+				android:adjustViewBounds="true" android:contentDescription="Goals" />
+			<TextView android:id="@+id/widget_goals"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textSize="16sp" />
+			<ImageView android:id="@+id/widget_assists_img"
+				android:layout_width="19sp" android:layout_height="19sp"
+				android:src="@drawable/notif_assist" android:scaleType="fitXY"
+				android:adjustViewBounds="true" android:contentDescription="Assists" />
+			<TextView android:id="@+id/widget_assists"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textSize="16sp" android:layout_marginRight="2sp" />
+			<ImageView android:id="@+id/widget_cs_img"
+				android:layout_width="19sp" android:layout_height="19sp"
+				android:src="@drawable/notif_red" android:scaleType="fitXY"
+				android:adjustViewBounds="true" android:contentDescription="Clean Sheets" />
+			<TextView android:id="@+id/widget_cs" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:textSize="16sp"
+				android:layout_marginRight="2sp" />
+			<ImageView android:id="@+id/widget_bonus_img"
+				android:layout_width="19sp" android:layout_height="19sp"
+				android:src="@drawable/ic_menu_invite" android:scaleType="fitXY"
+				android:adjustViewBounds="true" android:contentDescription="Bonus" />
+			<TextView android:id="@+id/widget_bonus"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textSize="16sp" android:layout_marginRight="2sp" />
+			<ImageView android:id="@+id/widget_playing_img"
+				android:src="@drawable/icon_playing" android:contentDescription="Playing"
+				android:layout_width="16sp" android:layout_height="16sp"
+				android:scaleType="fitXY" android:adjustViewBounds="true"
+				android:layout_marginTop="3sp" />
+			<TextView android:id="@+id/widget_playing"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textSize="16sp" />
+			<ImageView android:id="@+id/widget_to_play_img"
+				android:src="@drawable/icon_down_orange" android:contentDescription="To Play"
+				android:layout_width="16sp" android:layout_height="16sp"
+				android:scaleType="fitXY" android:adjustViewBounds="true"
+				android:layout_marginTop="3sp" />
+			<TextView android:id="@+id/widget_to_play"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textSize="16sp" />
+			<ImageView android:id="@+id/widget_complete_img"
+				android:src="@drawable/icon_tick" android:contentDescription="Complete"
+				android:layout_width="16sp" android:layout_height="16sp"
+				android:scaleType="fitXY" android:adjustViewBounds="true" />
+		</LinearLayout>
+
+	</RelativeLayout>
+</merge>

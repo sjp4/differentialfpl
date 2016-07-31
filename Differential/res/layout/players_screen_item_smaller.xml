@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/backing"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:paddingTop="1sp" android:paddingBottom="1sp" >
+	<TextView android:id="@+id/position" android:layout_width="15sp"
+		android:layout_height="17sp" android:textSize="16sp" android:maxLines="1"
+		android:gravity="top" android:textColor="#FFBF00"
+		android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+		android:padding="0sp" android:layout_marginRight="5sp" />
+	<com.pennas.fpl.ui.Worm android:id="@+id/worm"
+		android:layout_width="fill_parent" android:layout_height="17sp"
+		android:padding="0dp" android:layout_alignParentTop="true"
+		android:layout_toLeftOf="@+id/position" />
+	<LinearLayout android:orientation="horizontal" android:id="@+id/lin"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:weightSum="1.0" android:layout_below="@+id/worm">
+		<ImageView android:id="@+id/shirtPic" android:layout_width="24sp"
+			android:layout_height="24sp" android:scaleType="centerInside"
+			android:adjustViewBounds="true" android:contentDescription="Shirt" />
+		<TextView android:id="@+id/pName" android:layout_weight=".32"
+			android:layout_width="0dip" android:layout_height="wrap_content"
+			android:textSize="17sp" android:maxLines="1" android:layout_gravity="top"
+			android:gravity="top" android:textScaleX="0.9" android:layout_marginTop="0sp"
+			android:paddingTop="0sp" />
+		<TextView android:id="@+id/value" android:layout_height="fill_parent"
+			android:textSize="15sp" android:layout_weight=".18"
+			android:layout_width="0dip" android:textColor="#FFFFFF"
+			android:layout_gravity="center_vertical" android:gravity="center_vertical"
+			android:maxLines="1" />
+		<TextView android:id="@+id/lab0" android:layout_height="wrap_content"
+			android:textSize="9sp" android:layout_weight=".08"
+			android:layout_width="0dip" android:clickable="true" android:onClick="clickStat"
+			android:longClickable="true" android:layout_gravity="center_vertical"
+			android:gravity="center_vertical" />
+		<TextView android:id="@+id/stat0" android:layout_width="0dp"
+			android:layout_height="wrap_content" android:textSize="18sp"
+			android:layout_weight=".17" android:clickable="true" android:onClick="clickStat"
+			android:longClickable="true" android:textColor="#FFFFFF"
+			android:layout_gravity="center_vertical" android:gravity="center_vertical"
+			android:maxLines="1" android:textScaleX="0.9" />
+		<TextView android:id="@+id/lab2" android:layout_height="wrap_content"
+			android:textSize="9sp" android:layout_weight=".08"
+			android:layout_width="0dip" android:clickable="true" android:onClick="clickStat"
+			android:longClickable="true" android:layout_gravity="center_vertical"
+			android:gravity="center_vertical" />
+		<TextView android:id="@+id/stat2" android:layout_width="0dp"
+			android:layout_height="wrap_content" android:textSize="18sp"
+			android:layout_weight=".17" android:clickable="true" android:onClick="clickStat"
+			android:longClickable="true" android:textColor="#FFFFFF"
+			android:layout_gravity="center_vertical" android:gravity="center_vertical"
+			android:maxLines="1" android:textScaleX="0.9" />
+	</LinearLayout>
+	<com.pennas.fpl.ui.Ticker android:id="@+id/ticker"
+		android:layout_width="120sp" android:layout_height="6sp"
+		android:padding="0dp" android:layout_alignLeft="@+id/worm"
+		android:layout_alignBottom="@+id/lin" />
+	<ImageView android:id="@+id/watchlisticon"
+		android:layout_width="19sp" android:layout_height="19sp"
+		android:layout_alignLeft="@+id/worm" android:layout_below="@+id/worm"
+		android:scaleType="centerInside" android:adjustViewBounds="true"
+		android:contentDescription="Watchlist" />
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<include layout="@layout/tips" />
+	<com.pennas.fpl.ui.Worm android:id="@+id/seasonworm"
+		android:layout_width="fill_parent" android:layout_height="17sp"
+		android:padding="0dp" android:layout_below="@+id/tipsview" />
+	<RelativeLayout android:id="@+id/teamInfo"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_below="@+id/seasonworm">
+		<ImageView android:id="@+id/shirtPic" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_alignParentTop="true"
+			android:contentDescription="Shirt" />
+		<TextView android:id="@+id/players" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textSize="20sp"
+			android:layout_toRightOf="@+id/shirtPic" android:layout_below="@+id/season"
+			android:clickable="true" android:onClick="clickPlayers"
+			android:textColor="#FFFFFF" android:text="Players" android:maxLines="1"
+			android:paddingTop="4sp" android:paddingBottom="4sp"
+			android:paddingLeft="2sp" android:paddingRight="2sp"
+			android:background="#44ffffff" android:layout_marginTop="2sp"
+			android:layout_marginBottom="3sp" />
+	</RelativeLayout>
+
+	<com.viewpagerindicator.TitlePageIndicator
+		android:id="@+id/titles" android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:layout_below="@+id/teamInfo"
+		android:background="@drawable/vpi_gradient" />
+
+	<android.support.v4.view.ViewPager
+		android:id="@+id/viewpager" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_below="@+id/titles" />
+
+	<include layout="@layout/sync_panel" />
+</RelativeLayout>

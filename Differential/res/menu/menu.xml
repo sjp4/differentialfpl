@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/sync" android:icon="@drawable/ic_popup_sync_1"
+		android:title="Data Sync" android:showAsAction="always" />
+	<item android:id="@+id/filter" android:icon="@drawable/ic_menu_find"
+		android:title="Filter" android:showAsAction="always" android:enabled="false"
+		android:visible="false" >
+		<menu />
+	</item>
+	<item android:id="@+id/watchlist" android:icon="@drawable/btn_star_big_off"
+		android:title="Watchlist" android:showAsAction="always"
+		android:checkable="true" android:enabled="false"
+		android:visible="false" />
+	<item android:id="@+id/mysquad" android:icon="@drawable/btn_star_big_off"
+		android:title="My Squad" android:showAsAction="always"
+		android:checkable="true" android:enabled="false"
+		android:visible="false" />
+	<item android:id="@+id/screenshot" android:icon="@drawable/ic_menu_share"
+		android:title="Share" android:enabled="false" android:visible="false"
+		android:showAsAction="ifRoom" />
+	<item android:id="@+id/fpl" android:icon="@drawable/ic_menu_mapmode"
+		android:title="FPL" android:enabled="false" android:visible="false"
+		android:showAsAction="ifRoom" />
+	<item android:id="@+id/addrival" android:icon="@drawable/ic_menu_invite"
+		android:title="Add Rival" android:enabled="false" android:visible="false"
+		android:showAsAction="ifRoom" />
+	<item android:id="@+id/joinleague" android:icon="@drawable/ic_menu_invite"
+		android:title="Join Differential League" android:enabled="false" android:visible="false"
+		android:showAsAction="ifRoom" />
+	<item android:id="@+id/changeview" android:icon="@drawable/ic_menu_agenda"
+		android:title="Switch Layout" android:enabled="false" android:visible="false"
+		android:showAsAction="never" />
+	<item android:id="@+id/settings" android:icon="@drawable/ic_menu_sort_by_size"
+		android:title="Settings" android:showAsAction="never" />
+	<item android:id="@+id/tips" android:icon="@drawable/ic_menu_help"
+		android:title="Tips" android:showAsAction="never" />
+	<item android:id="@+id/about" android:icon="@drawable/ic_menu_info_details"
+		android:title="About" android:showAsAction="never" />
+</menu>

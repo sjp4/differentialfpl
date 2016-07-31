@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+	<SlidingDrawer android:id="@+id/drawer"
+		android:layout_width="fill_parent" android:layout_height="240sp"
+		android:orientation="vertical" android:handle="@+id/handle"
+		android:content="@+id/content" android:layout_alignParentTop="true">
+		<ImageView android:id="@id/handle" android:layout_width="60dip"
+			android:layout_height="0dip" android:contentDescription="Handle" />
+		<LinearLayout android:id="@id/content"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:orientation="vertical" android:background="@drawable/drawer_gradient" >
+			<com.pennas.fpl.ui.ProgressButton
+				android:layout_width="fill_parent" android:id="@+id/genScores"
+				android:layout_height="43sp" android:gravity="center_horizontal" />
+			<com.pennas.fpl.ui.ProgressButton
+				android:layout_width="fill_parent" android:id="@+id/genData"
+				android:layout_height="43sp" android:gravity="center_horizontal" />
+			<com.pennas.fpl.ui.ProgressButton
+				android:layout_width="fill_parent" android:id="@+id/genProc"
+				android:layout_height="43sp" android:gravity="center_horizontal" />
+			<com.pennas.fpl.ui.ProgressButton
+				android:layout_width="fill_parent" android:id="@+id/genSelection"
+				android:layout_height="43sp" android:gravity="center_horizontal" />
+			<com.pennas.fpl.ui.ProgressButton
+				android:layout_width="fill_parent" android:id="@+id/genFixtures"
+				android:layout_height="43sp" android:gravity="center_horizontal" />
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="fill_parent" android:orientation="horizontal">
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textSize="13sp"
+					android:text="GW" android:paddingLeft="4sp" />
+				<TextView android:id="@+id/drawer_gameweek"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:textSize="13sp" android:textColor="#FFFFFF"
+					android:paddingLeft="4sp" />
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textSize="13sp"
+					android:text="Next" android:paddingLeft="4sp" />
+				<TextView android:id="@+id/drawer_countdown"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:textSize="13sp" android:textColor="#FFFFFF"
+					android:paddingLeft="4sp" />
+			</LinearLayout>
+		</LinearLayout>
+	</SlidingDrawer>
+</merge>

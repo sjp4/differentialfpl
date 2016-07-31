@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/backing" android:layout_width="fill_parent"
+	android:layout_height="wrap_content" android:paddingRight="5sp">
+
+	<com.pennas.fpl.ui.Worm android:id="@+id/seasonworm"
+		android:layout_width="fill_parent" android:layout_height="17sp"
+		android:padding="0dp" android:layout_alignParentTop="true" />
+
+	<ImageView android:id="@+id/cup" android:layout_width="20sp"
+		android:layout_height="20sp" android:layout_alignParentLeft="true"
+		android:layout_below="@+id/seasonworm" android:src="@drawable/ic_popup_reminder"
+		android:scaleType="fitXY" android:adjustViewBounds="true"
+		android:contentDescription="Cup" />
+
+	<TextView android:id="@+id/teamname" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:textSize="21sp"
+		android:gravity="left" android:layout_toRightOf="@+id/cup"
+		android:layout_alignWithParentIfMissing="true" android:layout_below="@+id/seasonworm"
+		android:textColor="#FFFFFF" />
+	
+	<TextView android:id="@+id/chip" android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" android:textSize="21sp"
+		android:gravity="left" android:layout_toRightOf="@+id/teamname"
+		android:layout_alignTop="@+id/teamname"
+		android:textColor="#FF0000" android:paddingLeft="10dp" />
+
+	<LinearLayout android:id="@+id/goals_etc"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true" android:layout_below="@+id/teamname">
+		<ImageView android:id="@+id/goals_img" android:layout_width="20sp"
+			android:layout_height="20sp" android:src="@drawable/notif_goal"
+			android:scaleType="fitXY" android:adjustViewBounds="true"
+			android:contentDescription="Goals" />
+		<TextView android:id="@+id/goals" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textSize="20sp"
+			android:textColor="#FFFF00" />
+		<ImageView android:id="@+id/assists_img"
+			android:layout_width="20sp" android:layout_height="20sp"
+			android:src="@drawable/notif_assist" android:scaleType="fitXY"
+			android:adjustViewBounds="true" android:contentDescription="Assists" />
+		<TextView android:id="@+id/assists" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textSize="20sp"
+			android:textColor="#FFFF00" android:layout_marginRight="2sp" />
+		<ImageView android:id="@+id/cs_img" android:layout_width="20sp"
+			android:layout_height="20sp" android:src="@drawable/notif_red"
+			android:scaleType="fitXY" android:adjustViewBounds="true"
+			android:contentDescription="Clean Sheets" />
+		<TextView android:id="@+id/cs" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textSize="20sp"
+			android:textColor="#FFFF00" android:layout_marginRight="2sp" />
+		<ImageView android:id="@+id/bonus_img" android:layout_width="20sp"
+			android:layout_height="20sp" android:src="@drawable/ic_menu_invite"
+			android:scaleType="fitXY" android:adjustViewBounds="true"
+			android:contentDescription="Bonus" />
+		<TextView android:id="@+id/bonus" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textSize="20sp"
+			android:textColor="#FFFF00" android:layout_marginRight="2sp" />
+	</LinearLayout>
+
+	<TextView android:id="@+id/playername" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:textSize="18sp"
+		android:gravity="left" android:layout_below="@+id/teamname"
+		android:layout_toRightOf="@+id/goals_etc" />
+
+	<LinearLayout android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_alignParentRight="true"
+		android:layout_below="@+id/seasonworm">
+		<ImageView android:id="@+id/playing_img"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/icon_playing" android:contentDescription="Playing" />
+		<TextView android:id="@+id/playing" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textSize="22sp"
+			android:textColor="#FFFFFF" />
+		<ImageView android:id="@+id/to_play_img"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/icon_down_orange" android:contentDescription="To Play" />
+		<TextView android:id="@+id/to_play" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textSize="22sp"
+			android:textColor="#FFFFFF" />
+		<ImageView android:id="@+id/complete_img"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/icon_tick" android:contentDescription="Complete" />
+	</LinearLayout>
+
+	<TextView android:id="@+id/diff" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:textSize="20sp"
+		android:layout_alignParentRight="true" android:layout_alignTop="@+id/playername" />
+
+	<ImageView android:id="@+id/rivalTick" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_below="@+id/seasonworm"
+		android:layout_above="@+id/diff" android:layout_alignParentRight="true"
+		android:contentDescription="Rival" />
+
+</RelativeLayout>

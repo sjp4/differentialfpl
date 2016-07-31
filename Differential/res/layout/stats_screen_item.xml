@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:background="@drawable/list_item_gradient" >
+	<TextView android:id="@+id/statdesc" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:textSize="19sp"
+		android:gravity="left" android:layout_toLeftOf="@+id/statvalue"
+		android:layout_alignParentTop="true" />
+	<TextView android:id="@+id/playername" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:textSize="22sp"
+		android:gravity="left" android:textColor="#FFFF00"
+		android:layout_toLeftOf="@+id/statvalue" android:layout_below="@+id/statdesc"
+		android:paddingLeft="20sp" />
+	<TextView android:id="@+id/statvalue" android:layout_width="wrap_content"
+		android:layout_height="fill_parent" android:textSize="27sp"
+		android:paddingRight="10sp" android:layout_toLeftOf="@+id/shirtPic"
+		android:textColor="#FFFFFF" android:gravity="center_vertical"
+		android:layout_gravity="center_vertical" />
+	<ImageView android:id="@+id/shirtPic" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:scaleType="fitXY" android:adjustViewBounds="true"
+		android:layout_alignParentRight="true" android:contentDescription="Shirt" />
+</RelativeLayout>

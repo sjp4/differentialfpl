@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:orientation="vertical">
+		<TextView android:id="@+id/score" android:textSize="18sp"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_marginLeft="5sp" />
+		<include android:id="@+id/header" layout="@layout/fixture_screen_player_item" />
+		<ListView android:id="@+id/list" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" />
+	</LinearLayout>
+	<include layout="@layout/sync_panel" />
+</RelativeLayout>

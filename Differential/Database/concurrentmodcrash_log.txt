@@ -1,0 +1,341 @@
+UTC: Sun 26 Feb 17:46
+Local: Sun 26 Feb 17:46
+UK: Sun 26 Feb 17:46
+
+proc: 0 (Scores) updated: Sun 26 Feb 17:46 prev: Sun 26 Feb 17:46 next: Sun 26 Feb 17:51 fresh: true
+proc: 1 (Players) updated: Sun 26 Feb 14:33 prev: Sun 26 Feb 05:00 next: Mon 27 Feb 05:00 fresh: true
+proc: 2 (Processing) updated: Sun 26 Feb 11:29 prev: Thu 1 Jan 00:00 next: Thu 1 Jan 00:00 fresh: true
+proc: 3 (Leagues) updated: Sun 26 Feb 13:18 prev: Sat 25 Feb 11:30 next: Sat 3 Mar 11:30 fresh: true
+proc: 4 (Fixtures) updated: Sat 25 Feb 12:29 prev: Sat 25 Feb 11:30 next: Sat 3 Mar 11:30 fresh: true
+installed_on_sd: false
+cur_gameweek: 26
+gw_score: 47
+total_score: 1521
+my_squad_id: 34212
+logged_in: true
+FPLService.fails: 0
+FPLService.sincefail: 1
+Alarm: Sun 26 Feb 17:51
+
+GW Fixtures:-
+id: 1016 kickoff_datetime: Sat 25 Feb 15:00 team_away_id: 9 team_home_id: 22 complete: true
+id: 1017 kickoff_datetime: Sun 26 Feb 15:00 team_away_id: 23 team_home_id: 14 complete: true
+id: 1018 kickoff_datetime: Sat 25 Feb 15:00 team_away_id: 15 team_home_id: 17 complete: true
+id: 1019 kickoff_datetime: Sat 25 Feb 15:00 team_away_id: 2 team_home_id: 19 complete: true
+id: 1010 kickoff_datetime: Sun 26 Feb 13:30 team_away_id: 16 team_home_id: 1 complete: true
+id: 1011 kickoff_datetime: Sat 25 Feb 15:00 team_away_id: 6 team_home_id: 7 complete: true
+id: 1013 kickoff_datetime: Sat 25 Feb 17:30 team_away_id: 4 team_home_id: 11 complete: true
+id: 1014 kickoff_datetime: Sat 25 Feb 15:00 team_away_id: 20 team_home_id: 13 complete: true
+id: 1015 kickoff_datetime: Sun 26 Feb 13:30 team_away_id: 12 team_home_id: 21 complete: true
+
+My Squad Cur: 343 / 237 / 139 / 234 / 514 / 194 / 258 / 492 / 21 / 398 / 191 / 634 / 366 / 449 / 151
+
+User Comments:-
+null
+
+Log Entries:-
+<Sun 26 Feb 17:46:13> Application object being createdinstalled_on_sd = false
+dbGen dbExist = true,  installed_version = 14 DB_VERSION = 14
+<Sun 26 Feb 17:46:17> dbMoi version (new): 8
+init data. uk date: Sun 26 Feb 17:46
+setStale: 0 (Scores)
+setStale: 0 (Scores) prev: Sun 26 Feb 17:46 next: Sun 26 Feb 17:51
+setStale: 1 (Players)
+setStale: 1 (Players) prev: Sun 26 Feb 05:00 next: Mon 27 Feb 05:00
+setStale: 2 (Processing)
+setStale: 2 (Processing) prev: Thu 1 Jan 00:00 next: Thu 1 Jan 00:00
+setStale: 3 (Leagues)
+setStale: 3 (Leagues) prev: Sat 25 Feb 11:30 next: Sat 3 Mar 11:30
+setStale: 4 (Fixtures)
+setStale: 4 (Fixtures) prev: Sat 25 Feb 11:30 next: Sat 3 Mar 11:30
+Version 17 (1.5.2)
+<Sun 26 Feb 17:46:18> Home onResume()
+service onCreate
+auto running: Scores
+FPLService initProc: 0
+starting fpl gameweek stats 26 scrape
+getUrlStreamCore http://m.fantasy.premierleague.com/fixtures/26/ get_auth: -1 use_auth: -1
+<Sun 26 Feb 17:46:19> url size: -1 / encoding: gzip / resp code: 200
+final URL: http://m.fantasy.premierleague.com/fixtures/26/
+URL success: 200: OK
+  Chelsea 3 - 0 Bolton
+fixture marked as finished... not processing lineups etc
+       Chelsea
+Saves: Cech (1)
+Assists: Lampard (1)
+Assists: Mata (1)
+Assists: Drogba (1)
+Goals scored: Luiz (1)
+Goals scored: Lampard (1)
+Goals scored: Drogba (1)
+       Bolton
+Saves: Bogdan (10)
+Yellow cards: Pratley (1)
+  Newcastle 2 - 2 Wolves
+fixture marked as finished... not processing lineups etc
+       Newcastle
+Saves: Krul (2)
+Goals scored: Gutierrez (1)
+Goals scored: Cisse (1)
+Yellow cards: Ameobi (1)
+Assists: Simpson (1)
+Assists: Tiote (1)
+       Wolves
+Saves: Hennessey (3)
+Goals scored: Jarvis (1)
+Goals scored: Doyle (1)
+Assists: O'Hara (1)
+<Sun 26 Feb 17:46:20> Assists: Doyle (1)
+Yellow cards: Berra (1)
+  QPR 0 - 1 Fulham
+fixture marked as finished... not processing lineups etc
+       QPR
+Saves: Kenny (1)
+Red cards: Diakite (1)
+       Fulham
+Saves: Schwarzer (7)
+Goals scored: Pogrebnyak (1)
+Assists: Dembele (1)
+Yellow cards: Baird (1)
+Yellow cards: Riise (1)
+Yellow cards: Dembele (1)
+Yellow cards: Pogrebnyak (1)
+  West Brom 4 - 0 Sunderland
+fixture marked as finished... not processing lineups etc
+       West Brom
+Saves: Foster (3)
+Assists: Dorrans (1)
+Assists: Thomas (1)
+Assists: Mulumbu (1)
+Assists: Fortune (1)
+Yellow cards: Dorrans (1)
+Goals scored: Andrews (1)
+Goals scored: Morrison (1)
+Goals scored: Odemwingie (2)
+       Sunderland
+Saves: Mignolet (6)
+Yellow cards: O'Shea (1)
+  Wigan 0 - 0 Aston Villa
+fixture marked as finished... not processing lineups etc
+       Wigan
+Saves: Al-Habsi (3)
+       Aston Villa
+Saves: Given (2)
+Yellow cards: Collins (1)
+Yellow cards: Cuellar (1)
+Yellow cards: Albrighton (1)
+Yellow cards: Agbonlahor (1)
+  Man City 3 - 0 Blackburn
+fixture marked as finished... not processing lineups etc
+       Man City
+Saves: Hart (1)
+Goals scored: Balotelli (1)
+Goals scored: Dzeko (1)
+Goals scored: Aguero (1)
+Assists: Kolarov (2)
+Assists: Silva (1)
+       Blackburn
+Saves: Robinson (7)
+Home onPause()
+Yellow cards: Hanley (1)
+Yellow cards: Orr (1)
+  Arsenal 5 - 2 Tottenham
+fixture marked as finished... not processing lineups etc
+       Arsenal
+Saves: Szczesny (3)
+Goals scored: Sagna (1)
+Goals scored: Walcott (2)
+Goals scored: Rosicky (1)
+Goals scored: Van Persie (1)
+Assists: Sagna (1)
+Assists: Song (2)
+<Sun 26 Feb 17:46:21> Hot onResume()
+Assists: Arteta (1)
+<Sun 26 Feb 17:46:23> Assists: Van Persie (1)
+Yellow cards: Koscielny (1)
+Yellow cards: Arteta (1)
+Yellow cards: Van Persie (1)
+<Sun 26 Feb 17:46:24>        Tottenham
+Saves: Friedel (3)
+Goals scored: Saha (1)
+Goals scored: Adebayor (1)
+Assists: Bale (1)
+Assists: Adebayor (1)
+Red cards: Parker (1)
+Yellow cards: Sandro (1)
+Yellow cards: Modric (1)
+  Norwich 1 - 2 Man Utd
+fixture marked as finished... not processing lineups etc
+       Norwich
+Saves: Ruddy (4)
+Goals scored: Holt (1)
+Yellow cards: Johnson (1)
+Assists: Whitbread (1)
+       Man Utd
+Saves: de Gea (4)
+Goals scored: Giggs (1)
+Goals scored: Scholes (1)
+Assists: Nani (1)
+Assists: Young (1)
+Yellow cards: Ferdinand (1)
+Yellow cards: Evans J (1)
+  Stoke City 2 - 0 Swansea
+fixture: Sun 26 Feb 15:00   now: Sun 26 Feb 17:46
+starting match scores prem linueps 3473091 scrape
+starting match scores prem goals 3473091 scrape
+getUrlStreamCore http://www.premierleague.com/ajax/match/3473091/fixture-header.json get_auth: -1 use_auth: -1
+RETRY URL..http://www.premierleague.com/ajax/match/3473091/fixture-header.json (resp = 200 encoding = null message = OK)
+getUrlStreamCore http://www.premierleague.com/ajax/match/3473091/fixture-header.json get_auth: -1 use_auth: -1
+url size: 1661 / encoding: null / resp code: 200
+final URL: http://www.premierleague.com/ajax/match/3473091/fixture-header.json
+URL success: 200: OK
+home goal: 24
+home goal: 39
+state = POST_MATCH
+marking as finished
+done match scores prem goals 3473091 in 0.371 seconds; finished = true ok = true
+getUrlStreamCore http://www.premierleague.com/ajax/live-match/3473091/squad-details.json get_auth: -1 use_auth: -1
+<Sun 26 Feb 17:46:25> RETRY URL..http://www.premierleague.com/ajax/live-match/3473091/squad-details.json (resp = 200 encoding = null message = OK)
+getUrlStreamCore http://www.premierleague.com/ajax/live-match/3473091/squad-details.json get_auth: -1 use_auth: -1
+url size: 11226 / encoding: null / resp code: 200
+final URL: http://www.premierleague.com/ajax/live-match/3473091/squad-details.json
+URL success: 200: OK
+home = true
+sub = false
+----------------
+ player: Begovic mins: 90 conc: 0 team goals: 2
+ player: Wilkinson mins: 90 conc: 0 team goals: 2
+...YELLOW
+ player: Shawcross mins: 90 conc: 0 team goals: 2
+...GOAL
+ player: Upson mins: 90 conc: 0 team goals: 2
+ player: Wilson mins: 90 conc: 0 team goals: 2
+...SUB(87)
+subbed off: 87
+ player: Shotton mins: 87 conc: 0 team goals: 2
+ player: Whitehead mins: 90 conc: 0 team goals: 2
+ player: Whelan mins: 90 conc: 0 team goals: 2
+...SUB(67)
+subbed off: 67
+ player: Etherington mins: 67 conc: 0 team goals: 2
+ player: Walters mins: 90 conc: 0 team goals: 2
+...GOAL
+...SUB(86)
+subbed off: 86
+ player: Crouch mins: 86 conc: 0 team goals: 2
+home = true
+sub = true
+----------------
+...SUB(87)
+subbed on: 87
+ player: Delap mins: 3 conc: 0 team goals: 0
+...SUB(68)
+subbed on: 68
+ player: Jerome mins: 22 conc: 0 team goals: 0
+...SUB(88)
+subbed on: 88
+ player: Palacios mins: 2 conc: 0 team goals: 0
+home = false
+sub = false
+----------------
+ player: Tremmel mins: 90 conc: 2 team goals: 0
+ player: Rangel mins: 90 conc: 2 team goals: 0
+ player: Williams mins: 90 conc: 2 team goals: 0
+ player: Caulker mins: 90 conc: 2 team goals: 0
+ player: Taylor mins: 90 conc: 2 team goals: 0
+ player: Britton mins: 90 conc: 2 team goals: 0
+ player: Sigurdsson mins: 90 conc: 2 team goals: 0
+ player: Allen mins: 90 conc: 2 team goals: 0
+...SUB(70)
+subbed off: 70
+ player: Dyer mins: 70 conc: 2 team goals: 0
+ player: Graham mins: 90 conc: 2 team goals: 0
+...SUB(70)
+subbed off: 70
+ player: Sinclair mins: 70 conc: 2 team goals: 0
+home = false
+sub = true
+----------------
+...SUB(71)
+subbed on: 71
+ player: McEachran mins: 19 conc: 0 team goals: 0
+...SUB(70)
+subbed on: 70
+ player: Moore mins: 20 conc: 0 team goals: 0
+done match scores prem linueps 3473091 in 1.153 seconds; ok = true
+       Stoke City
+Saves: Begovic (4)
+Goals scored: Upson (1)
+Goals scored: Crouch (1)
+Yellow cards: Shawcross (1)
+Assists: Shotton (1)
+Assists: Etherington (1)
+       Swansea
+Saves: Tremmel (2)
+<Sun 26 Feb 17:46:26> starting updateSquadGameweekScores gw 26
+total: 1494 - 0 + 52
+squad 759 gameweek score: 52
+autosub: null (514)  -> null (259)
+total: 1283 - 0 + 57
+squad 25704 gameweek score: 57
+total: 1505 - 31 + 47
+squad 34212 gameweek score: 47
+autosub: null (514)  -> null (70)
+total: 1354 - 0 + 56
+squad 52286 gameweek score: 56
+autosub: null (514)  -> null (259)
+total: 1315 - 0 + 45
+squad 95089 gameweek score: 45
+total: 1274 - 0 + 46
+squad 297321 gameweek score: 46
+autosub: null (187)  -> null (623)
+autosub: null (514)  -> null (435)
+total: 1396 - 0 + 49
+squad 343045 gameweek score: 49
+autosub: null (84)  -> null (237)
+total: 1236 - 0 + 47
+squad 400890 gameweek score: 47
+autosub: null (179)  -> null (369)
+autosub: null (239)  -> null (314)
+total: 1233 - 0 + 51
+squad 503225 gameweek score: 51
+total: 1360 - 0 + 40
+squad 737711 gameweek score: 40
+total: 1224 - 22 + 50
+squad 740705 gameweek score: 50
+autosub: null (310)  -> null (259)
+total: 1294 - 20 + 46
+squad 878335 gameweek score: 46
+total: 1324 - 29 + 47
+squad 880750 gameweek score: 47
+autosub: null (310)  -> null (382)
+total: 1360 - 32 + 42
+squad 1064359 gameweek score: 42
+autosub: null (139)  -> null (366)
+autosub: null (217)  -> null (279)
+total: 1356 - 13 + 46
+squad 1476339 gameweek score: 46
+autosub: null (192)  -> null (140)
+autosub: null (230)  -> null (623)
+total: 1555 - 28 + 53
+squad 1724792 gameweek score: 53
+autosub: null (106)  -> null (237)
+autosub: null (187)  -> null (242)
+total: 1168 - 24 + 58
+squad 1754300 gameweek score: 58
+autosub: null (238)  -> null (312)
+total: 1261 - 23 + 53
+squad 2138955 gameweek score: 53
+done updateSquadGameweekScores gw 26 in 0.433 seconds
+<Sun 26 Feb 17:46:29> Hot onPause()
+Selection::load()
+Selection onResume()
+<Sun 26 Feb 17:46:36> done fpl gameweek stats 26 in 17.606 seconds
+Selection::load()
+Scores finished with error = false
+<Sun 26 Feb 17:46:37> autosub: Malouda (106)  -> Simpson (237)
+autosub: Richards (187)  -> Tiote (242)
+total: 1168 - 24 + 58
+populateGrid()
+done populateGrid() in 0.141 seconds
+<Sun 26 Feb 17:46:38> adding diags...

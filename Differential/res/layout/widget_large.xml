@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:padding="@dimen/widget_margin">
+	<LinearLayout android:id="@+id/widgetlayout"
+		android:layout_width="match_parent" android:layout_height="match_parent"
+		android:background="@drawable/widget_background" android:padding="2sp"
+		android:orientation="vertical">
+
+		<include layout="@layout/widget_main" />
+
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:background="@drawable/widget_vidi_gradient">
+			<TextView android:id="@+id/datetime1" android:textSize="12sp"
+				android:layout_width="101sp" android:layout_height="wrap_content"
+				android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+				android:gravity="center_horizontal" android:singleLine="true" />
+			<TextView android:id="@+id/gameweek1" android:textSize="14sp"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textColor="#AAFFFF00" android:layout_below="@+id/datetime1"
+				android:layout_alignParentLeft="true" android:layout_marginRight="3sp" />
+			<TextView android:id="@+id/message1" android:textSize="14sp"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_toRightOf="@+id/datetime1" android:layout_marginLeft="3sp" />
+			<ImageView android:id="@+id/cat_background1"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_below="@+id/datetime1" android:layout_toRightOf="@+id/gameweek1"
+				android:layout_toLeftOf="@+id/message1" android:layout_alignBottom="@+id/cat1"
+				android:contentDescription="Category" android:scaleType="fitXY" />
+			<TextView android:id="@+id/cat1" android:textSize="12sp"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_below="@+id/datetime1" android:layout_toRightOf="@+id/gameweek1"
+				android:layout_toLeftOf="@+id/message1" />
+		</RelativeLayout>
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:background="@drawable/widget_vidi_gradient">
+			<TextView android:id="@+id/datetime2" android:textSize="12sp"
+				android:layout_width="101sp" android:layout_height="wrap_content"
+				android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+				android:gravity="center_horizontal" android:singleLine="true" />
+			<TextView android:id="@+id/gameweek2" android:textSize="14sp"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textColor="#AAFFFF00" android:layout_below="@+id/datetime2"
+				android:layout_alignParentLeft="true" android:layout_marginRight="3sp" />
+			<TextView android:id="@+id/message2" android:textSize="14sp"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_toRightOf="@+id/datetime2" android:layout_marginLeft="3sp" />
+			<ImageView android:id="@+id/cat_background2"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_below="@+id/datetime2" android:layout_toRightOf="@+id/gameweek2"
+				android:layout_toLeftOf="@+id/message2" android:layout_alignBottom="@+id/cat2"
+				android:contentDescription="Category" android:scaleType="fitXY" />
+			<TextView android:id="@+id/cat2" android:textSize="12sp"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_below="@+id/datetime2" android:layout_toRightOf="@+id/gameweek2"
+				android:layout_toLeftOf="@+id/message2" />
+		</RelativeLayout>
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:background="@drawable/widget_vidi_gradient">
+			<TextView android:id="@+id/datetime3" android:textSize="12sp"
+				android:layout_width="101sp" android:layout_height="wrap_content"
+				android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+				android:gravity="center_horizontal" android:singleLine="true" />
+			<TextView android:id="@+id/gameweek3" android:textSize="14sp"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textColor="#AAFFFF00" android:layout_below="@+id/datetime3"
+				android:layout_alignParentLeft="true" android:layout_marginRight="3sp" />
+			<TextView android:id="@+id/message3" android:textSize="14sp"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_toRightOf="@+id/datetime3" android:layout_marginLeft="3sp" />
+			<ImageView android:id="@+id/cat_background3"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_below="@+id/datetime3" android:layout_toRightOf="@+id/gameweek3"
+				android:layout_toLeftOf="@+id/message3" android:layout_alignBottom="@+id/cat3"
+				android:contentDescription="Category" android:scaleType="fitXY" />
+			<TextView android:id="@+id/cat3" android:textSize="12sp"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_below="@+id/datetime3" android:layout_toRightOf="@+id/gameweek3"
+				android:layout_toLeftOf="@+id/message3" />
+		</RelativeLayout>
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:background="@drawable/widget_vidi_gradient">
+			<TextView android:id="@+id/datetime4" android:textSize="12sp"
+				android:layout_width="101sp" android:layout_height="wrap_content"
+				android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+				android:gravity="center_horizontal" android:singleLine="true" />
+			<TextView android:id="@+id/gameweek4" android:textSize="14sp"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textColor="#AAFFFF00" android:layout_below="@+id/datetime4"
+				android:layout_alignParentLeft="true" android:layout_marginRight="3sp" />
+			<TextView android:id="@+id/message4" android:textSize="14sp"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_toRightOf="@+id/datetime4" android:layout_marginLeft="3sp" />
+			<ImageView android:id="@+id/cat_background4"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_below="@+id/datetime4" android:layout_toRightOf="@+id/gameweek4"
+				android:layout_toLeftOf="@+id/message4" android:layout_alignBottom="@+id/cat4"
+				android:contentDescription="Category" android:scaleType="fitXY" />
+			<TextView android:id="@+id/cat4" android:textSize="12sp"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_below="@+id/datetime4" android:layout_toRightOf="@+id/gameweek4"
+				android:layout_toLeftOf="@+id/message4" />
+		</RelativeLayout>
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:background="@drawable/widget_vidi_gradient">
+			<TextView android:id="@+id/datetime5" android:textSize="12sp"
+				android:layout_width="101sp" android:layout_height="wrap_content"
+				android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+				android:gravity="center_horizontal" android:singleLine="true" />
+			<TextView android:id="@+id/gameweek5" android:textSize="14sp"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textColor="#AAFFFF00" android:layout_below="@+id/datetime5"
+				android:layout_alignParentLeft="true" android:layout_marginRight="3sp" />
+			<TextView android:id="@+id/message5" android:textSize="14sp"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_toRightOf="@+id/datetime5" android:layout_marginLeft="3sp" />
+			<ImageView android:id="@+id/cat_background5"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_below="@+id/datetime5" android:layout_toRightOf="@+id/gameweek5"
+				android:layout_toLeftOf="@+id/message5" android:layout_alignBottom="@+id/cat5"
+				android:contentDescription="Category" android:scaleType="fitXY" />
+			<TextView android:id="@+id/cat5" android:textSize="12sp"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_below="@+id/datetime5" android:layout_toRightOf="@+id/gameweek5"
+				android:layout_toLeftOf="@+id/message5" />
+		</RelativeLayout>
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:background="@drawable/widget_vidi_gradient">
+			<TextView android:id="@+id/datetime6" android:textSize="12sp"
+				android:layout_width="101sp" android:layout_height="wrap_content"
+				android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+				android:gravity="center_horizontal" android:singleLine="true" />
+			<TextView android:id="@+id/gameweek6" android:textSize="14sp"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textColor="#AAFFFF00" android:layout_below="@+id/datetime6"
+				android:layout_alignParentLeft="true" android:layout_marginRight="3sp" />
+			<TextView android:id="@+id/message6" android:textSize="14sp"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_toRightOf="@+id/datetime6" android:layout_marginLeft="3sp" />
+			<ImageView android:id="@+id/cat_background6"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_below="@+id/datetime6" android:layout_toRightOf="@+id/gameweek6"
+				android:layout_toLeftOf="@+id/message6" android:layout_alignBottom="@+id/cat6"
+				android:contentDescription="Category" android:scaleType="fitXY" />
+			<TextView android:id="@+id/cat6" android:textSize="12sp"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_below="@+id/datetime6" android:layout_toRightOf="@+id/gameweek6"
+				android:layout_toLeftOf="@+id/message6" />
+		</RelativeLayout>
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:background="@drawable/widget_vidi_gradient">
+			<TextView android:id="@+id/datetime7" android:textSize="12sp"
+				android:layout_width="101sp" android:layout_height="wrap_content"
+				android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+				android:gravity="center_horizontal" android:singleLine="true" />
+			<TextView android:id="@+id/gameweek7" android:textSize="14sp"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textColor="#AAFFFF00" android:layout_below="@+id/datetime7"
+				android:layout_alignParentLeft="true" android:layout_marginRight="3sp" />
+			<TextView android:id="@+id/message7" android:textSize="14sp"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_toRightOf="@+id/datetime7" android:layout_marginLeft="3sp" />
+			<ImageView android:id="@+id/cat_background7"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_below="@+id/datetime7" android:layout_toRightOf="@+id/gameweek7"
+				android:layout_toLeftOf="@+id/message7" android:layout_alignBottom="@+id/cat7"
+				android:contentDescription="Category" android:scaleType="fitXY" />
+			<TextView android:id="@+id/cat7" android:textSize="12sp"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_below="@+id/datetime7" android:layout_toRightOf="@+id/gameweek7"
+				android:layout_toLeftOf="@+id/message7" />
+		</RelativeLayout>
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:background="@drawable/widget_vidi_gradient">
+			<TextView android:id="@+id/datetime8" android:textSize="12sp"
+				android:layout_width="101sp" android:layout_height="wrap_content"
+				android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+				android:gravity="center_horizontal" android:singleLine="true" />
+			<TextView android:id="@+id/gameweek8" android:textSize="14sp"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textColor="#AAFFFF00" android:layout_below="@+id/datetime8"
+				android:layout_alignParentLeft="true" android:layout_marginRight="3sp" />
+			<TextView android:id="@+id/message8" android:textSize="14sp"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_toRightOf="@+id/datetime8" android:layout_marginLeft="3sp" />
+			<ImageView android:id="@+id/cat_background8"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_below="@+id/datetime8" android:layout_toRightOf="@+id/gameweek8"
+				android:layout_toLeftOf="@+id/message8" android:layout_alignBottom="@+id/cat8"
+				android:contentDescription="Category" android:scaleType="fitXY" />
+			<TextView android:id="@+id/cat8" android:textSize="12sp"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_below="@+id/datetime8" android:layout_toRightOf="@+id/gameweek8"
+				android:layout_toLeftOf="@+id/message8" />
+		</RelativeLayout>
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:background="@drawable/widget_vidi_gradient">
+			<TextView android:id="@+id/datetime9" android:textSize="12sp"
+				android:layout_width="101sp" android:layout_height="wrap_content"
+				android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+				android:gravity="center_horizontal" android:singleLine="true" />
+			<TextView android:id="@+id/gameweek9" android:textSize="14sp"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textColor="#AAFFFF00" android:layout_below="@+id/datetime9"
+				android:layout_alignParentLeft="true" android:layout_marginRight="3sp" />
+			<TextView android:id="@+id/message9" android:textSize="14sp"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_toRightOf="@+id/datetime9" android:layout_marginLeft="3sp" />
+			<ImageView android:id="@+id/cat_background9"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_below="@+id/datetime9" android:layout_toRightOf="@+id/gameweek9"
+				android:layout_toLeftOf="@+id/message9" android:layout_alignBottom="@+id/cat9"
+				android:contentDescription="Category" android:scaleType="fitXY" />
+			<TextView android:id="@+id/cat9" android:textSize="12sp"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_below="@+id/datetime9" android:layout_toRightOf="@+id/gameweek9"
+				android:layout_toLeftOf="@+id/message9" />
+		</RelativeLayout>
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:background="@drawable/widget_vidi_gradient">
+			<TextView android:id="@+id/datetime10" android:textSize="12sp"
+				android:layout_width="101sp" android:layout_height="wrap_content"
+				android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+				android:gravity="center_horizontal" android:singleLine="true" />
+			<TextView android:id="@+id/gameweek10" android:textSize="14sp"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textColor="#AAFFFF00" android:layout_below="@+id/datetime10"
+				android:layout_alignParentLeft="true" android:layout_marginRight="3sp" />
+			<TextView android:id="@+id/message10" android:textSize="14sp"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_toRightOf="@+id/datetime10" android:layout_marginLeft="3sp" />
+			<ImageView android:id="@+id/cat_background10"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_below="@+id/datetime10" android:layout_toRightOf="@+id/gameweek10"
+				android:layout_toLeftOf="@+id/message10" android:layout_alignBottom="@+id/cat10"
+				android:contentDescription="Category" android:scaleType="fitXY" />
+			<TextView android:id="@+id/cat10" android:textSize="12sp"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_below="@+id/datetime10" android:layout_toRightOf="@+id/gameweek10"
+				android:layout_toLeftOf="@+id/message10" />
+		</RelativeLayout>
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:background="@drawable/widget_vidi_gradient">
+			<TextView android:id="@+id/datetime11" android:textSize="12sp"
+				android:layout_width="101sp" android:layout_height="wrap_content"
+				android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+				android:gravity="center_horizontal" android:singleLine="true" />
+			<TextView android:id="@+id/gameweek11" android:textSize="14sp"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textColor="#AAFFFF00" android:layout_below="@+id/datetime11"
+				android:layout_alignParentLeft="true" android:layout_marginRight="3sp" />
+			<TextView android:id="@+id/message11" android:textSize="14sp"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_toRightOf="@+id/datetime11" android:layout_marginLeft="3sp" />
+			<ImageView android:id="@+id/cat_background11"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_below="@+id/datetime11" android:layout_toRightOf="@+id/gameweek11"
+				android:layout_toLeftOf="@+id/message11" android:layout_alignBottom="@+id/cat11"
+				android:contentDescription="Category" android:scaleType="fitXY" />
+			<TextView android:id="@+id/cat11" android:textSize="12sp"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_below="@+id/datetime11" android:layout_toRightOf="@+id/gameweek11"
+				android:layout_toLeftOf="@+id/message11" />
+		</RelativeLayout>
+
+	</LinearLayout>
+</FrameLayout>

@@ -1,0 +1,531 @@
+UTC: Sat 4 Aug 01:04
+Local: Fri 3 Aug 18:04
+UK: Sat 4 Aug 02:04
+
+proc: 0 (Scores) updated: Fri 3 Aug 11:40 prev: Fri 3 Aug 11:00 next: Sat 4 Aug 11:00 fresh: true
+proc: 1 (Players) updated: Sat 4 Aug 00:46 prev: Fri 3 Aug 04:00 next: Sat 4 Aug 04:00 fresh: true
+proc: 2 (Leagues) updated: Sat 4 Aug 00:46 prev: Wed 31 Dec 23:00 next: Sat 18 Aug 10:30 fresh: true
+proc: 3 (Fixtures) updated: Fri 20 Jul 16:42 prev: Wed 31 Dec 23:00 next: Sat 18 Aug 10:30 fresh: true
+proc: 4 (Processing) updated: Sat 21 Jul 12:30 prev: Wed 31 Dec 23:00 next: Sat 18 Aug 10:30 fresh: true
+installed_on_sd: false
+cur_gameweek: 0
+gw_score: com.pennas.fpl.c.u@405e2fd8
+total_score: 0
+my_squad_id: 121528
+logged_in: true
+FPLService.cycles: 2424
+FPLService.fails: 16
+FPLService.sincefail: 15
+FPLService.hasfailed: true
+Alarm: Fri 3 Aug 11:00
+
+GW Fixtures:-
+
+My Squad Cur:
+
+User Comments:-
+transfer confirm err: "null"
+
+Log Entries:-
+<Fri 3 Aug 04:08:05> Application object being createdinstalled_on_sd = false
+Version 22 (1.7.0)
+dbGen dbExist = true, installed_version = 21 DB_VERSION = 21
+dbMoi version (new): 10
+init data. uk date: Fri 3 Aug 04:08
+<Fri 3 Aug 04:08:06> setStale: 0 (Scores) prev: Thu 2 Aug 11:00 next: Fri 3 Aug 11:00
+setStale: 1 (Players) prev: Thu 2 Aug 04:00 next: Fri 3 Aug 04:00
+setStale: 2 (Leagues) prev: Wed 31 Dec 23:00 next: Sat 18 Aug 10:30
+setStale: 3 (Fixtures) prev: Wed 31 Dec 23:00 next: Sat 18 Aug 10:30
+setStale: 4 (Processing) prev: Wed 31 Dec 23:00 next: Sat 18 Aug 10:30
+widget update: vidiprinter
+widget update: vidiprinter
+widget update: vidiprinter
+widget update: vidiprinter
+widget update: vidiprinter
+widget update: vidiprinter
+widget update: vidiprinter
+widget update: vidiprinter
+widget update: vidiprinter
+widget update: vidiprinter
+widget update: vidiprinter
+Widgets updating..
+service onCreate
+<Fri 3 Aug 04:10:06> Binding to licensing service.
+Calling checkLicense on service for com.pennas.fpl
+Start monitoring timeout.
+Received response.
+Clearing timeout.
+applicationError: 3
+<Fri 3 Aug 05:00:09> setStale: 1 (Players) prev: Fri 3 Aug 04:00 next: Sat 4 Aug 04:00
+<Fri 3 Aug 12:00:03> setStale: 0 (Scores) prev: Fri 3 Aug 11:00 next: Sat 4 Aug 11:00
+<Fri 3 Aug 12:40:36> auto running: Scores
+FPLService initProc: 0
+auto running: Players
+proc running; queueing Players
+proc running; queueing Check Version
+Widgets updating..
+Scores finished with error = false
+FPLService initProc: 1
+record_transfers: false
+starting my squad scrape gw 1
+getPLUserCookie
+<Fri 3 Aug 12:40:39> got plUserCookie
+getUrlStreamCore http://fantasy.premierleague.com/accounts/login/ get_auth: 0 use_auth: -1
+<Fri 3 Aug 12:40:40> url size: -1 / encoding: null / resp code: 302
+final URL: http://fantasy.premierleague.com/accounts/login/
+URL success: 302: FOUND
+getUrlStreamCore http://fantasy.premierleague.com/my-team/ get_auth: -1 use_auth: 0
+<Fri 3 Aug 12:40:41> url size: -1 / encoding: gzip / resp code: 200
+final URL: http://fantasy.premierleague.com/my-team/
+URL success: 200: OK
+capt: false sub: 0 vice_capt: false fpl_id: 226
+capt: false sub: 0 vice_capt: false fpl_id: 72
+capt: false sub: 0 vice_capt: false fpl_id: 124
+capt: false sub: 0 vice_capt: false fpl_id: 361
+capt: false sub: 0 vice_capt: false fpl_id: 85
+capt: false sub: 0 vice_capt: false fpl_id: 184
+capt: false sub: 0 vice_capt: false fpl_id: 185
+capt: false sub: 0 vice_capt: true fpl_id: 218
+capt: false sub: 0 vice_capt: false fpl_id: 419
+capt: false sub: 0 vice_capt: false fpl_id: 89
+capt: true sub: 0 vice_capt: false fpl_id: 193
+capt: false sub: 1 vice_capt: false fpl_id: 252
+capt: false sub: 2 vice_capt: false fpl_id: 389
+capt: false sub: 3 vice_capt: false fpl_id: 230
+capt: false sub: 4 vice_capt: false fpl_id: 429
+squad name: yeh banksy manager name: Mike Andrewjeski
+squad id found: 121528 (href="/entry/121528/history/">View Gameweek history</a>)
+done my squad scrape in 5.383 seconds
+starting get notes..
+getUrlStreamCore http://fantasy.premierleague.com/web/api/notes/ get_auth: -1 use_auth: 0
+<Fri 3 Aug 12:40:42> url size: -1 / encoding: null / resp code: 200
+final URL: http://fantasy.premierleague.com/web/api/notes/
+URL success: 200: OK
+done get notes version in 0.35 seconds
+starting NEW players scrape
+getUrlStreamCore http://fantasy.premierleague.com/transfers/ get_auth: -1 use_auth: 0
+<Fri 3 Aug 12:40:43> url size: -1 / encoding: gzip / resp code: 200
+final URL: http://fantasy.premierleague.com/transfers/
+URL success: 200: OK
+bank: 0.0
+<Fri 3 Aug 12:40:44> ---- Hangeland (124) -------owned_perc: '10' -> '20'
+---- Crofts (262) -------fpl_red_flag: '0' -> '1'
+---- Crofts (262) -------fpl_news: 'null' -> 'Joined Brighton in three-year deal on 2/8. - Unknown return date'
+widget update: vidiprinter
+---- Helguson (300) -------fpl_red_flag: '0' -> '1'
+---- Helguson (300) -------fpl_news: 'null' -> 'Joined Cardiff City on 2/8. - Unknown return date'
+widget update: vidiprinter
+---- Sidibe (376) -------fpl_yellow_flag: '1' -> '0'
+---- Sidibe (376) -------fpl_news: 'Knee injury - 50% chance of playing' -> 'null'
+---- Brunt (479) -------fpl_yellow_flag: '0' -> '1'
+---- Brunt (479) -------fpl_news: 'null' -> 'Calf injury - 50% chance of playing'
+widget update: vidiprinter
+wl item: 539
+wl item: 87
+wl item: 537
+player_fpl_id: 226 bought_price: 5.5
+player_fpl_id: 252 bought_price: 4.5
+player_fpl_id: 72 bought_price: 6.5
+player_fpl_id: 124 bought_price: 5.0
+player_fpl_id: 361 bought_price: 5.5
+player_fpl_id: 230 bought_price: 5.0
+player_fpl_id: 389 bought_price: 4.5
+player_fpl_id: 85 bought_price: 9.5
+player_fpl_id: 184 bought_price: 8.0
+player_fpl_id: 218 bought_price: 8.5
+player_fpl_id: 419 bought_price: 5.5
+player_fpl_id: 185 bought_price: 4.5
+player_fpl_id: 193 bought_price: 11.5
+player_fpl_id: 89 bought_price: 10.0
+player_fpl_id: 429 bought_price: 6.0
+done 5 changes on 542 players (plus 0 inserts) over 3328 lines, in 2.681 seconds
+<Fri 3 Aug 12:40:45> Widgets updating..
+Players finished with error = false
+FPLService initProc: 11
+starting get latest version..
+getUrlStreamCore http://sites.google.com/site/differentialfpl/version.txt?attredirects=0&d=1 get_auth: -1 use_auth: -1
+<Fri 3 Aug 12:40:46> url size: -1 / encoding: null / resp code: 302
+final URL: https://sites.google.com/site/differentialfpl/version.txt?attredirects=0&d=1
+Game is updating
+URL fail: 302: Moved Temporarily
+version: url failed
+Widgets updating..
+<Fri 3 Aug 12:41:36> FPLService initProc: 11
+starting get latest version..
+getUrlStreamCore http://sites.google.com/site/differentialfpl/version.txt?attredirects=0&d=1 get_auth: -1 use_auth: -1
+url size: -1 / encoding: null / resp code: 302
+final URL: https://sites.google.com/site/differentialfpl/version.txt?attredirects=0&d=1
+Game is updating
+URL fail: 302: Moved Temporarily
+version: url failed
+Widgets updating..
+<Fri 3 Aug 12:43:06> FPLService initProc: 11
+starting get latest version..
+getUrlStreamCore http://sites.google.com/site/differentialfpl/version.txt?attredirects=0&d=1 get_auth: -1 use_auth: -1
+<Fri 3 Aug 12:43:07> url size: -1 / encoding: null / resp code: 302
+final URL: https://sites.google.com/site/differentialfpl/version.txt?attredirects=0&d=1
+Game is updating
+URL fail: 302: Moved Temporarily
+version: url failed
+Widgets updating..
+<Fri 3 Aug 12:45:36> FPLService initProc: 11
+starting get latest version..
+getUrlStreamCore http://sites.google.com/site/differentialfpl/version.txt?attredirects=0&d=1 get_auth: -1 use_auth: -1
+url size: -1 / encoding: null / resp code: 302
+final URL: https://sites.google.com/site/differentialfpl/version.txt?attredirects=0&d=1
+Game is updating
+URL fail: 302: Moved Temporarily
+version: url failed
+Widgets updating..
+<Fri 3 Aug 12:50:06> FPLService initProc: 11
+starting get latest version..
+getUrlStreamCore http://sites.google.com/site/differentialfpl/version.txt?attredirects=0&d=1 get_auth: -1 use_auth: -1
+<Fri 3 Aug 12:50:07> url size: -1 / encoding: null / resp code: 302
+final URL: https://sites.google.com/site/differentialfpl/version.txt?attredirects=0&d=1
+Game is updating
+URL fail: 302: Moved Temporarily
+version: url failed
+Widgets updating..
+<Fri 3 Aug 12:58:37> FPLService initProc: 11
+starting get latest version..
+getUrlStreamCore http://sites.google.com/site/differentialfpl/version.txt?attredirects=0&d=1 get_auth: -1 use_auth: -1
+url size: -1 / encoding: null / resp code: 302
+final URL: https://sites.google.com/site/differentialfpl/version.txt?attredirects=0&d=1
+Game is updating
+URL fail: 302: Moved Temporarily
+version: url failed
+Widgets updating..
+<Fri 3 Aug 13:15:07> FPLService initProc: 11
+starting get latest version..
+getUrlStreamCore http://sites.google.com/site/differentialfpl/version.txt?attredirects=0&d=1 get_auth: -1 use_auth: -1
+<Fri 3 Aug 13:15:08> url size: -1 / encoding: null / resp code: 302
+final URL: https://sites.google.com/site/differentialfpl/version.txt?attredirects=0&d=1
+Game is updating
+URL fail: 302: Moved Temporarily
+version: url failed
+Widgets updating..
+<Fri 3 Aug 13:47:39> FPLService initProc: 11
+starting get latest version..
+getUrlStreamCore http://sites.google.com/site/differentialfpl/version.txt?attredirects=0&d=1 get_auth: -1 use_auth: -1
+url size: -1 / encoding: null / resp code: 302
+final URL: https://sites.google.com/site/differentialfpl/version.txt?attredirects=0&d=1
+Game is updating
+URL fail: 302: Moved Temporarily
+version: url failed
+Widgets updating..
+<Fri 3 Aug 14:52:14> FPLService initProc: 11
+starting get latest version..
+getUrlStreamCore http://sites.google.com/site/differentialfpl/version.txt?attredirects=0&d=1 get_auth: -1 use_auth: -1
+<Fri 3 Aug 14:52:15> url size: -1 / encoding: null / resp code: 302
+final URL: https://sites.google.com/site/differentialfpl/version.txt?attredirects=0&d=1
+Game is updating
+URL fail: 302: Moved Temporarily
+version: url failed
+Widgets updating..
+<Fri 3 Aug 18:08:47> FPLService initProc: 11
+starting get latest version..
+getUrlStreamCore http://sites.google.com/site/differentialfpl/version.txt?attredirects=0&d=1 get_auth: -1 use_auth: -1
+url size: -1 / encoding: null / resp code: 302
+final URL: https://sites.google.com/site/differentialfpl/version.txt?attredirects=0&d=1
+Game is updating
+URL fail: 302: Moved Temporarily
+version: url failed
+Widgets updating..
+<Fri 3 Aug 22:53:16> FPLService initProc: 11
+starting get latest version..
+getUrlStreamCore http://sites.google.com/site/differentialfpl/version.txt?attredirects=0&d=1 get_auth: -1 use_auth: -1
+<Fri 3 Aug 22:53:17> url size: -1 / encoding: null / resp code: 302
+final URL: https://sites.google.com/site/differentialfpl/version.txt?attredirects=0&d=1
+Game is updating
+URL fail: 302: Moved Temporarily
+version: url failed
+Widgets updating..
+<Sat 4 Aug 01:46:00> Home onResume()
+<Sat 4 Aug 01:46:05> Home onPause()
+Selection::load()
+Selection onResume()
+<Sat 4 Aug 01:46:06> populateGrid()
+done populateGrid() in 0.31 seconds
+<Sat 4 Aug 01:46:10> Selection onPause()
+Home onResume()
+<Sat 4 Aug 01:46:12> widget update: points
+<Sat 4 Aug 01:46:41> FPLService initProc: 1
+record_transfers: false
+starting my squad scrape gw 1
+getPLUserCookie
+<Sat 4 Aug 01:46:43> got plUserCookie
+getUrlStreamCore http://fantasy.premierleague.com/accounts/login/ get_auth: 0 use_auth: -1
+<Sat 4 Aug 01:46:45> url size: -1 / encoding: null / resp code: 302
+final URL: http://fantasy.premierleague.com/accounts/login/
+URL success: 302: FOUND
+getUrlStreamCore http://fantasy.premierleague.com/my-team/ get_auth: -1 use_auth: 0
+<Sat 4 Aug 01:46:46> url size: -1 / encoding: gzip / resp code: 200
+final URL: http://fantasy.premierleague.com/my-team/
+URL success: 200: OK
+<Sat 4 Aug 01:46:47> capt: false sub: 0 vice_capt: false fpl_id: 226
+capt: false sub: 0 vice_capt: false fpl_id: 72
+capt: false sub: 0 vice_capt: false fpl_id: 124
+capt: false sub: 0 vice_capt: false fpl_id: 361
+capt: false sub: 0 vice_capt: false fpl_id: 85
+capt: false sub: 0 vice_capt: false fpl_id: 184
+capt: false sub: 0 vice_capt: false fpl_id: 185
+capt: false sub: 0 vice_capt: true fpl_id: 218
+capt: false sub: 0 vice_capt: false fpl_id: 419
+capt: false sub: 0 vice_capt: false fpl_id: 89
+capt: true sub: 0 vice_capt: false fpl_id: 193
+capt: false sub: 1 vice_capt: false fpl_id: 252
+capt: false sub: 2 vice_capt: false fpl_id: 389
+capt: false sub: 3 vice_capt: false fpl_id: 230
+capt: false sub: 4 vice_capt: false fpl_id: 429
+squad name: yeh banksy manager name: Mike Andrewjeski
+squad id found: 121528 (href="/entry/121528/history/">View Gameweek history</a>)
+done my squad scrape in 5.239 seconds
+starting get notes..
+getUrlStreamCore http://fantasy.premierleague.com/web/api/notes/ get_auth: -1 use_auth: 0
+url size: -1 / encoding: null / resp code: 200
+final URL: http://fantasy.premierleague.com/web/api/notes/
+URL success: 200: OK
+done get notes version in 0.281 seconds
+starting NEW players scrape
+<Sat 4 Aug 01:46:48> getUrlStreamCore http://fantasy.premierleague.com/transfers/ get_auth: -1 use_auth: 0
+url size: -1 / encoding: gzip / resp code: 200
+final URL: http://fantasy.premierleague.com/transfers/
+URL success: 200: OK
+bank: 0.0
+---- Etuhu (131) -------fpl_red_flag: '0' -> '1'
+---- Etuhu (131) -------fpl_news: 'null' -> 'Joined Blackburn Rovers on 3/8. - Unknown return date'
+widget update: vidiprinter
+---- Aquilani (165) -------fpl_red_flag: '0' -> '1'
+---- Aquilani (165) -------fpl_news: 'null' -> 'Moved to Fiorentina on 03/08. - Unknown return date'
+widget update: vidiprinter
+---- Aguero (193) -------owned_perc: '40' -> '50'
+---- Kebe (318) -------fpl_news: 'Hamstring injury - 75% chance of playing' -> 'Hamstring injury - 25% chance of playing'
+<Sat 4 Aug 01:46:49> widget update: vidiprinter
+wl item: 539
+wl item: 87
+wl item: 537
+player_fpl_id: 226 bought_price: 5.5
+player_fpl_id: 252 bought_price: 4.5
+player_fpl_id: 72 bought_price: 6.5
+player_fpl_id: 124 bought_price: 5.0
+player_fpl_id: 361 bought_price: 5.5
+player_fpl_id: 230 bought_price: 5.0
+player_fpl_id: 389 bought_price: 4.5
+player_fpl_id: 85 bought_price: 9.5
+player_fpl_id: 184 bought_price: 8.0
+player_fpl_id: 218 bought_price: 8.5
+player_fpl_id: 419 bought_price: 5.5
+player_fpl_id: 185 bought_price: 4.5
+player_fpl_id: 193 bought_price: 11.5
+player_fpl_id: 89 bought_price: 10.0
+player_fpl_id: 429 bought_price: 6.0
+done 4 changes on 542 players (plus 0 inserts) over 3328 lines, in 1.613 seconds
+<Sat 4 Aug 01:46:50> Widgets updating..
+Players finished with error = false
+toast: get notes
+toast: players update
+callback ok 1
+FPLService initProc: 2
+updateLeagues justRivals=false
+starting leagues scrape
+getUrlStreamCore http://m.fantasy.premierleague.com/my-leagues/ get_auth: -1 use_auth: 0
+<Sat 4 Aug 01:46:51> url size: -1 / encoding: gzip / resp code: 200
+final URL: http://m.fantasy.premierleague.com/my-leagues/
+URL success: 200: OK
+done leagues scrape in 0.779 seconds
+starting league teams scrape for league 3123
+getUrlStreamCore http://fantasy.premierleague.com/my-leagues/3123/standings/ get_auth: -1 use_auth: -1
+url size: -1 / encoding: gzip / resp code: 200
+final URL: http://fantasy.premierleague.com/my-leagues/3123/standings/
+URL success: 200: OK
+done league teams scrape in 0.621 seconds
+starting league teams scrape for league 107804
+getUrlStreamCore http://fantasy.premierleague.com/my-leagues/107804/standings/ get_auth: -1 use_auth: -1
+<Sat 4 Aug 01:46:52> url size: -1 / encoding: gzip / resp code: 200
+final URL: http://fantasy.premierleague.com/my-leagues/107804/standings/
+URL success: 200: OK
+done league teams scrape in 0.487 seconds
+starting updateSquadGameweekScores gw 0
+done updateSquadGameweekScores gw 0 in 0.032 seconds
+Widgets updating..
+Leagues finished with error = false
+toast: get league teams
+callback ok 2
+<Sat 4 Aug 01:46:56> Home onPause()
+Selection::load()
+Selection onResume()
+populateGrid()
+<Sat 4 Aug 01:46:57> done populateGrid() in 0.144 seconds
+<Sat 4 Aug 01:47:02> FPLService initProc: 11
+starting get latest version..
+getUrlStreamCore http://sites.google.com/site/differentialfpl/version.txt?attredirects=0&d=1 get_auth: -1 use_auth: -1
+url size: -1 / encoding: null / resp code: 302
+final URL: https://sites.google.com/site/differentialfpl/version.txt?attredirects=0&d=1
+Game is updating
+URL fail: 302: Moved Temporarily
+version: url failed
+Widgets updating..
+<Sat 4 Aug 01:47:08> populateGrid()
+done populateGrid() in 0.002 seconds
+<Sat 4 Aug 01:47:09> Selection onPause()
+squad_string: 72, 85, 89, 124, 184, 185, 193, 218, 226, 230, 252, 361, 389, 419, 429
+teams_string: 11
+max: 13.5 min: 4.0 default: 9.5
+k
+Players::popList()
+Players onResume()
+<Sat 4 Aug 01:47:14> menu: 2131100001
+<Sat 4 Aug 01:47:17> menu: 0
+<Sat 4 Aug 01:47:19> menu: 2001
+subclass
+i
+Players::popList()
+<Sat 4 Aug 01:47:31> Players onPause()
+Selection onResume()
+<Sat 4 Aug 01:47:44> Selection onPause()
+Home onResume()
+<Sat 4 Aug 01:47:46> Home onPause()
+<Sat 4 Aug 01:48:02> FPLService initProc: 11
+starting get latest version..
+getUrlStreamCore http://sites.google.com/site/differentialfpl/version.txt?attredirects=0&d=1 get_auth: -1 use_auth: -1
+url size: -1 / encoding: null / resp code: 302
+final URL: https://sites.google.com/site/differentialfpl/version.txt?attredirects=0&d=1
+Game is updating
+URL fail: 302: Moved Temporarily
+version: url failed
+Widgets updating..
+<Sat 4 Aug 01:49:32> FPLService initProc: 11
+starting get latest version..
+getUrlStreamCore http://sites.google.com/site/differentialfpl/version.txt?attredirects=0&d=1 get_auth: -1 use_auth: -1
+url size: -1 / encoding: null / resp code: 302
+final URL: https://sites.google.com/site/differentialfpl/version.txt?attredirects=0&d=1
+Game is updating
+URL fail: 302: Moved Temporarily
+version: url failed
+Widgets updating..
+<Sat 4 Aug 01:52:02> FPLService initProc: 11
+starting get latest version..
+getUrlStreamCore http://sites.google.com/site/differentialfpl/version.txt?attredirects=0&d=1 get_auth: -1 use_auth: -1
+url size: -1 / encoding: null / resp code: 302
+final URL: https://sites.google.com/site/differentialfpl/version.txt?attredirects=0&d=1
+Game is updating
+URL fail: 302: Moved Temporarily
+version: url failed
+Widgets updating..
+<Sat 4 Aug 01:56:32> FPLService initProc: 11
+starting get latest version..
+getUrlStreamCore http://sites.google.com/site/differentialfpl/version.txt?attredirects=0&d=1 get_auth: -1 use_auth: -1
+url size: -1 / encoding: null / resp code: 302
+final URL: https://sites.google.com/site/differentialfpl/version.txt?attredirects=0&d=1
+Game is updating
+URL fail: 302: Moved Temporarily
+version: url failed
+Widgets updating..
+<Sat 4 Aug 02:01:55> Home onResume()
+<Sat 4 Aug 02:01:57> Home onPause()
+Selection::load()
+Selection onResume()
+<Sat 4 Aug 02:01:58> populateGrid()
+done populateGrid() in 0.123 seconds
+<Sat 4 Aug 02:01:59> populateGrid()
+done populateGrid() in 0.002 seconds
+<Sat 4 Aug 02:02:01> Selection onPause()
+squad_string: 72, 85, 89, 124, 184, 185, 193, 218, 226, 230, 252, 361, 389, 419, 429
+teams_string: 7
+max: 13.5 min: 4.0 default: 4.5
+k
+Players::popList()
+Players onResume()
+<Sat 4 Aug 02:02:16> Players onPause()
+populateGrid()
+done populateGrid() in 0.07 seconds
+Selection onResume()
+<Sat 4 Aug 02:02:25> Selection onPause()
+squad_string: 72, 85, 89, 124, 184, 522, 193, 218, 226, 230, 252, 361, 389, 419, 429
+teams_string: 7
+max: 13.5 min: 4.0 default: 4.5
+k
+Players::popList()
+Players onResume()
+<Sat 4 Aug 02:02:59> Players onPause()
+populateGrid()
+done populateGrid() in 0.079 seconds
+Selection onResume()
+<Sat 4 Aug 02:03:01> starting transfer squad ids get
+getPLUserCookie
+<Sat 4 Aug 02:03:04> got plUserCookie
+getUrlStreamCore http://fantasy.premierleague.com/accounts/login/ get_auth: 0 use_auth: -1
+url size: -1 / encoding: null / resp code: 302
+final URL: http://fantasy.premierleague.com/accounts/login/
+URL success: 302: FOUND
+getUrlStreamCore http://fantasy.premierleague.com/transfers/ get_auth: -1 use_auth: 0
+<Sat 4 Aug 02:03:05> url size: -1 / encoding: gzip / resp code: 200
+final URL: http://fantasy.premierleague.com/transfers/
+URL success: 200: OK
+token: C790uFW5fcoUYfOkwyNaKV09PQjEpIZx
+sell price: 55
+fpl id: 226 element: 1822906 index: 0 sell price: 55
+sell price: 45
+fpl id: 252 element: 1822907 index: 1 sell price: 45
+sell price: 65
+fpl id: 72 element: 1822908 index: 2 sell price: 65
+sell price: 50
+fpl id: 124 element: 1822909 index: 3 sell price: 50
+sell price: 55
+fpl id: 361 element: 1822910 index: 4 sell price: 55
+sell price: 50
+fpl id: 230 element: 1822911 index: 5 sell price: 50
+sell price: 45
+fpl id: 389 element: 1822913 index: 6 sell price: 45
+sell price: 95
+fpl id: 85 element: 1822915 index: 7 sell price: 95
+sell price: 80
+fpl id: 184 element: 1822917 index: 8 sell price: 80
+sell price: 85
+fpl id: 218 element: 1822919 index: 9 sell price: 85
+sell price: 55
+fpl id: 419 element: 1822920 index: 10 sell price: 55
+sell price: 45
+fpl id: 185 element: 1822922 index: 11 sell price: 45
+sell price: 115
+fpl id: 193 element: 1822924 index: 12 sell price: 115
+sell price: 100
+fpl id: 89 element: 1822926 index: 13 sell price: 100
+sell price: 60
+fpl id: 429 element: 1822928 index: 14 sell price: 60
+<Sat 4 Aug 02:03:06> done transfer squad ids in 4.414 seconds
+in: 166(3)
+out: 185(3)
+select post: csrfmiddlewaretoken=C790uFW5fcoUYfOkwyNaKV09PQjEpIZx&pick_formset-TOTAL_FORMS=15&pick_formset-INITIAL_FORMS=15&pick_formset-MAX_NUM_FORMS=15&pick_formset-0-is_captain=False&pick_formset-0-is_vice_captain=False&pick_formset-0-position=1&pick_formset-0-id=1822906&pick_formset-1-is_captain=False&pick_formset-1-is_vice_captain=False&pick_formset-1-position=2&pick_formset-1-id=1822908&pick_formset-2-is_captain=False&pick_formset-2-is_vice_captain=False&pick_formset-2-position=3&pick_formset-2-id=1822909&pick_formset-3-is_captain=False&pick_formset-3-is_vice_captain=False&pick_formset-3-position=4&pick_formset-3-id=1822910&pick_formset-4-is_captain=False&pick_formset-4-is_vice_captain=False&pick_formset-4-position=5&pick_formset-4-id=1822915&pick_formset-5-is_captain=False&pick_formset-5-is_vice_captain=False&pick_formset-5-position=6&pick_formset-5-id=1822917&pick_formset-6-is_captain=False&pick_formset-6-is_vice_captain=False&pick_formset-6-position=7&pick_formset-6-id=null&pick_formset-7-is_captain=False&pick_formset-7-is_vice_captain=True&pick_formset-7-position=8&pick_formset-7-id=1822919&pick_formset-8-is_captain=False&pick_formset-8-is_vice_captain=False&pick_formset-8-position=9&pick_formset-8-id=1822920&pick_formset-9-is_captain=False&pick_formset-9-is_vice_captain=False&pick_formset-9-position=10&pick_formset-9-id=1822926&pick_formset-10-is_captain=True&pick_formset-10-is_vice_captain=False&pick_formset-10-position=11&pick_formset-10-id=1822924&pick_formset-11-is_captain=False&pick_formset-11-is_vice_captain=False&pick_formset-11-position=12&pick_formset-11-id=1822907&pick_formset-12-is_captain=False&pick_formset-12-is_vice_captain=False&pick_formset-12-position=13&pick_formset-12-id=1822913&pick_formset-13-is_captain=False&pick_formset-13-is_vice_captain=False&pick_formset-13-position=14&pick_formset-13-id=1822911&pick_formset-14-is_captain=False&pick_formset-14-is_vice_captain=False&pick_formset-14-position=15&pick_formset-14-id=1822928&ismCptSelect=11&ismVCptSelect=8
+new
+0: 226
+1: 252
+2: 72
+3: 124
+4: 361
+5: 230
+6: 389
+7: 85
+8: 184
+9: 218
+10: 419
+11: 166
+12: 193
+13: 89
+14: 429
+final verification post: csrfmiddlewaretoken=C790uFW5fcoUYfOkwyNaKV09PQjEpIZx&transfers_form-event_id=1&transfers_form-confirmed=True&transfers_form-wildcard=&pick_formset-TOTAL_FORMS=15&pick_formset-INITIAL_FORMS=15&pick_formset-MAX_NUM_FORMS=15&pick_formset-0-element=226&pick_formset-0-purchase_price=&pick_formset-0-selling_price=55&pick_formset-0-id=1822906&pick_formset-1-element=252&pick_formset-1-purchase_price=&pick_formset-1-selling_price=45&pick_formset-1-id=1822907&pick_formset-2-element=72&pick_formset-2-purchase_price=&pick_formset-2-selling_price=65&pick_formset-2-id=1822908&pick_formset-3-element=124&pick_formset-3-purchase_price=&pick_formset-3-selling_price=50&pick_formset-3-id=1822909&pick_formset-4-element=361&pick_formset-4-purchase_price=&pick_formset-4-selling_price=55&pick_formset-4-id=1822910&pick_formset-5-element=230&pick_formset-5-purchase_price=&pick_formset-5-selling_price=50&pick_formset-5-id=1822911&pick_formset-6-element=389&pick_formset-6-purchase_price=&pick_formset-6-selling_price=45&pick_formset-6-id=1822912&pick_formset-7-element=85&pick_formset-7-purchase_price=&pick_formset-7-selling_price=95&pick_formset-7-id=1822913&pick_formset-8-element=184&pick_formset-8-purchase_price=&pick_formset-8-selling_price=80&pick_formset-8-id=1822914&pick_formset-9-element=218&pick_formset-9-purchase_price=&pick_formset-9-selling_price=85&pick_formset-9-id=1822915&pick_formset-10-element=419&pick_formset-10-purchase_price=&pick_formset-10-selling_price=55&pick_formset-10-id=1822916&pick_formset-11-element=166&pick_formset-11-purchase_price=45&pick_formset-11-selling_price=45&pick_formset-11-id=1822917&pick_formset-12-element=193&pick_formset-12-purchase_price=&pick_formset-12-selling_price=115&pick_formset-12-id=1822918&pick_formset-13-element=89&pick_formset-13-purchase_price=&pick_formset-13-selling_price=100&pick_formset-13-id=1822919&pick_formset-14-element=429&pick_formset-14-purchase_price=&pick_formset-14-selling_price=60&pick_formset-14-id=1822920
+starting fpl confirmation info get
+getUrlStreamCore http://fantasy.premierleague.com/transfers/confirm/ get_auth: -1 use_auth: 0
+posting: csrfmiddlewaretoken=C790uFW5fcoUYfOkwyNaKV09PQjEpIZx&transfers_form-event_id=1&transfers_form-confirmed=True&transfers_form-wildcard=&pick_formset-TOTAL_FORMS=15&pick_formset-INITIAL_FORMS=15&pick_formset-MAX_NUM_FORMS=15&pick_formset-0-element=226&pick_formset-0-purchase_price=&pick_formset-0-selling_price=55&pick_formset-0-id=1822906&pick_formset-1-element=252&pick_formset-1-purchase_price=&pick_formset-1-selling_price=45&pick_formset-1-id=1822907&pick_formset-2-element=72&pick_formset-2-purchase_price=&pick_formset-2-selling_price=65&pick_formset-2-id=1822908&pick_formset-3-element=124&pick_formset-3-purchase_price=&pick_formset-3-selling_price=50&pick_formset-3-id=1822909&pick_formset-4-element=361&pick_formset-4-purchase_price=&pick_formset-4-selling_price=55&pick_formset-4-id=1822910&pick_formset-5-element=230&pick_formset-5-purchase_price=&pick_formset-5-selling_price=50&pick_formset-5-id=1822911&pick_formset-6-element=389&pick_formset-6-purchase_price=&pick_formset-6-selling_price=45&pick_formset-6-id=1822912&pick_formset-7-element=85&pick_formset-7-purchase_price=&pick_formset-7-selling_price=95&pick_formset-7-id=1822913&pick_formset-8-element=184&pick_formset-8-purchase_price=&pick_formset-8-selling_price=80&pick_formset-8-id=1822914&pick_formset-9-element=218&pick_formset-9-purchase_price=&pick_formset-9-selling_price=85&pick_formset-9-id=1822915&pick_formset-10-element=419&pick_formset-10-purchase_price=&pick_formset-10-selling_price=55&pick_formset-10-id=1822916&pick_formset-11-element=166&pick_formset-11-purchase_price=45&pick_formset-11-selling_price=45&pick_formset-11-id=1822917&pick_formset-12-element=193&pick_formset-12-purchase_price=&pick_formset-12-selling_price=115&pick_formset-12-id=1822918&pick_formset-13-element=89&pick_formset-13-purchase_price=&pick_formset-13-selling_price=100&pick_formset-13-id=1822919&pick_formset-14-element=429&pick_formset-14-purchase_price=&pick_formset-14-selling_price=60&pick_formset-14-id=1822920
+url size: -1 / encoding: null / resp code: 302
+final URL: http://fantasy.premierleague.com/transfers/confirm/
+Game is updating
+URL fail: 302: FOUND
+fpl confirmation info: url failed
+done fpl confirmation info in 0.682 seconds
+Error: in/out don't look correct
+no FPL message
+Transfer error: null
+<Sat 4 Aug 02:03:14> menu: 2131100006
+Selection onPause()
+<Sat 4 Aug 02:04:03> adding diags...

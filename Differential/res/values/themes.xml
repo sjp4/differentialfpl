@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+	<style name="Theme.FPL.Dark" parent="Theme.Sherlock">
+		<item name="actionBarStyle">@style/Widget.ActionBar.FPL.Dark</item>
+		<item name="android:actionBarStyle">@style/Widget.ActionBar.FPL.Dark</item>
+		
+		<item name="vpiTitlePageIndicatorStyle">@style/FPLTitlePageIndicator</item>
+		
+		<item name="absForceOverflow">false</item>
+	</style>
+	
+	<style name="Theme.FPL.Light" parent="Theme.Sherlock.Light">
+		<item name="actionBarStyle">@style/Widget.ActionBar.FPL.Light</item>
+		<item name="android:actionBarStyle">@style/Widget.ActionBar.FPL.Light</item>
+		
+		<item name="absForceOverflow">false</item>
+	</style>
+
+	<style name="Widget.ActionBar.FPL.Dark" parent="Widget.Sherlock.ActionBar">
+		<item name="background">@drawable/actionbar_gradient</item>
+    	<item name="android:background">@drawable/actionbar_gradient</item>
+    	
+    	<item name="itemPadding">2dip</item>
+		<item name="android:itemPadding">2dip</item>
+		
+		<item name="titleTextStyle">@style/Theme.FPL.TitleTextStyle</item>
+   		<item name="android:titleTextStyle">@style/Theme.FPL.TitleTextStyle</item>
+   		
+   		<item name="subtitleTextStyle">@style/Theme.FPL.SubtitleTextStyle</item>
+   		<item name="android:subtitleTextStyle">@style/Theme.FPL.SubtitleTextStyle</item>
+	</style>
+	
+	<style name="Widget.ActionBar.FPL.Light" parent="Widget.Sherlock.ActionBar">
+		<item name="itemPadding">2dip</item>
+		<item name="android:itemPadding">2dip</item>
+		
+		<item name="titleTextStyle">@style/Theme.FPL.TitleTextStyle</item>
+   		<item name="android:titleTextStyle">@style/Theme.FPL.TitleTextStyle</item>
+   		
+   		<item name="subtitleTextStyle">@style/Theme.FPL.SubtitleTextStyle</item>
+   		<item name="android:subtitleTextStyle">@style/Theme.FPL.SubtitleTextStyle</item>
+	</style>
+	
+	<style name="Theme.FPL.TitleTextStyle" parent="TextAppearance.Sherlock.Widget.ActionBar.Title">
+		<item name="android:textSize">16dp</item>
+	</style>
+	
+	<style name="Theme.FPL.SubtitleTextStyle" parent="TextAppearance.Sherlock.Widget.ActionBar.Subtitle">
+		<item name="android:textSize">13dp</item>
+	</style>
+	
+	<style name="FPLTitlePageIndicator" parent="Widget.TitlePageIndicator">
+        <item name="footerColor">#FF68DD88</item>
+    </style>
+
+</resources>

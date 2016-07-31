@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:paddingTop="5sp" android:paddingBottom="5sp" android:background="#444444" >
+	<ImageView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:src="@drawable/icon_playing"
+		android:contentDescription="Playing" />
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:textSize="18sp"
+		android:textColor="#FFFFFF" android:text="Playing" />
+	<ImageView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:src="@drawable/icon_tick"
+		android:contentDescription="Finished" />
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:textSize="18sp"
+		android:textColor="#FFFFFF" android:text="Finished" />
+	<ImageView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:src="@drawable/icon_bonus"
+		android:contentDescription="Got Bonus"  />
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:textSize="18sp"
+		android:textColor="#FFFFFF" android:text="Bonus Pts" />
+</LinearLayout>

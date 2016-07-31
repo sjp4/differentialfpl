@@ -1,0 +1,12 @@
+4.2 encrypted, new scheme
+before decrypt: 00EB1DEFA391D65F8AD1C8548B0C3315
+
+2.1 emulator old schema
+before decrypt: 9D07A80A2B0F34890FC1C99F3E378927
+
+2.1 again
+before decrypt: 9D07A80A2B0F34890FC1C99F3E378927
+
+2.1 new scheme
+before decrypt: 99094A2F60CD281AB0EB9CEE83F3102C
+

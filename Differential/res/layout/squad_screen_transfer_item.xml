@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<TextView android:id="@+id/playernameout"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:textSize="21sp" android:gravity="left" android:textColor="#FFFF00"
+		android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+	<TextView android:id="@+id/out" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:textSize="19sp"
+		android:gravity="bottom" android:layout_toRightOf="@+id/playernameout"
+		android:layout_alignBottom="@+id/playernameout" android:text="Out"
+		android:paddingLeft="5sp" />
+	<ImageView android:id="@+id/playerpicout"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:scaleType="fitXY" android:adjustViewBounds="true"
+		android:layout_alignParentLeft="true" android:layout_below="@+id/playernameout"
+		android:contentDescription="Player Out" />
+	<ImageView android:id="@+id/iconout" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_toRightOf="@+id/playerpicout"
+		android:layout_below="@+id/playernameout" android:src="@drawable/icon_down_orange"
+		android:contentDescription="Out" />
+	<TextView android:id="@+id/pointsout" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:textSize="27sp"
+		android:gravity="left" android:layout_toRightOf="@+id/playerpicout"
+		android:layout_below="@+id/iconout" android:textColor="#FFFFFF"
+		android:paddingLeft="5sp" />
+
+	<ImageView android:id="@+id/playerpicin"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:scaleType="fitXY" android:adjustViewBounds="true"
+		android:layout_alignParentRight="true" android:layout_alignParentTop="true"
+		android:paddingRight="5sp" android:contentDescription="Player In" />
+	<TextView android:id="@+id/playernamein" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:textSize="21sp"
+		android:gravity="right" android:textColor="#FFFF00"
+		android:layout_alignParentRight="true" android:layout_below="@+id/playerpicin"
+		android:paddingRight="5sp" />
+	<TextView android:id="@+id/in" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:textSize="19sp"
+		android:gravity="right" android:layout_toLeftOf="@+id/playernamein"
+		android:layout_below="@+id/playerpicin" android:text="In"
+		android:paddingRight="5sp" />
+	<ImageView android:id="@+id/iconin" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_toLeftOf="@+id/playerpicin"
+		android:layout_above="@+id/playernamein" android:src="@drawable/icon_up_green"
+		android:contentDescription="In" />
+	<TextView android:id="@+id/pointsin" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:textSize="27sp"
+		android:gravity="right" android:layout_toLeftOf="@+id/playerpicin"
+		android:layout_above="@+id/iconin" android:textColor="#FFFFFF"
+		android:paddingRight="3sp" />
+
+	<TextView android:id="@+id/gameweek" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:textSize="24sp"
+		android:gravity="center" android:layout_toRightOf="@+id/iconout"
+		android:layout_toLeftOf="@+id/iconin" android:layout_alignBottom="@+id/iconin"
+		android:layout_alignTop="@+id/iconout" android:paddingRight="5sp" />
+</RelativeLayout>

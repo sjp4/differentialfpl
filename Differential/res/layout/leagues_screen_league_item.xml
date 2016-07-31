@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:paddingTop="5sp" android:paddingBottom="5sp"
+	android:background="@drawable/list_item_gradient" >
+	<TextView android:id="@+id/leaguename" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:textSize="23sp"
+		android:gravity="left" android:layout_toLeftOf="@+id/position"
+		android:layout_alignParentTop="true" android:textColor="#FFFFFF" />
+	<TextView android:id="@+id/position" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:textSize="27sp"
+		android:textColor="#FFFF00"
+		android:layout_toLeftOf="@+id/numteams"
+		android:paddingLeft="20sp" />
+	<TextView android:id="@+id/numteams" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:textSize="25sp"
+		android:paddingRight="10sp" android:layout_alignParentRight="true"
+		android:layout_gravity="center_vertical" />
+</RelativeLayout>

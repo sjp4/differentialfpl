@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:paddingTop="4sp" android:paddingBottom="4sp"
+	android:orientation="vertical" android:background="#EE444444" >
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<ImageView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:src="@drawable/icon_playing"
+			android:contentDescription="Playing" />
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textSize="18sp"
+			android:textColor="#FFFFFF" android:text="Playing" />
+		<ImageView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:src="@drawable/icon_down_orange"
+			android:contentDescription="To Play" />
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textSize="18sp"
+			android:textColor="#FFFFFF" android:text="To Play" />
+		<ImageView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:src="@drawable/icon_tick"
+			android:contentDescription="Complete" />
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textSize="18sp"
+			android:textColor="#FFFFFF" android:text="Complete" />
+	</LinearLayout>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<ImageView android:layout_width="20sp"
+			android:layout_height="20sp" android:src="@drawable/notif_goal"
+			android:scaleType="fitXY" android:adjustViewBounds="true"
+			android:contentDescription="Goals" />
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textSize="18sp"
+			android:textColor="#FFFFFF" android:text="Goals" />
+		<ImageView android:layout_width="20sp"
+			android:layout_height="20sp" android:src="@drawable/notif_assist"
+			android:scaleType="fitXY" android:adjustViewBounds="true"
+			android:contentDescription="Assists" />
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textSize="18sp"
+			android:textColor="#FFFFFF" android:text="Assists" />
+		<ImageView android:layout_width="20sp"
+			android:layout_height="20sp" android:src="@drawable/notif_red"
+			android:scaleType="fitXY" android:adjustViewBounds="true"
+			android:contentDescription="Clean Sheets" />
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textSize="18sp"
+			android:textColor="#FFFFFF" android:text="CS" />
+		<ImageView android:layout_width="20sp"
+			android:layout_height="20sp" android:src="@drawable/ic_menu_invite"
+			android:scaleType="fitXY" android:adjustViewBounds="true"
+			android:contentDescription="Bonus" />
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textSize="18sp"
+			android:textColor="#FFFFFF" android:text="Bonus" />
+		<ImageView android:layout_width="20sp"
+			android:layout_height="20sp" android:src="@drawable/ic_popup_reminder"
+			android:scaleType="fitXY" android:adjustViewBounds="true"
+			android:contentDescription="Cup" />
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textSize="18sp"
+			android:textColor="#FFFFFF" android:text="Cup" />
+	</LinearLayout>
+</LinearLayout>

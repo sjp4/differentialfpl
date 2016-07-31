@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.pennas.fpl" android:versionCode="60" android:versionName="2.2.4"
+	android:installLocation="auto">
+
+	<uses-sdk android:minSdkVersion="7" android:targetSdkVersion="15" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	<uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+
+	<application android:icon="@drawable/differential"
+		android:label="@string/app_name" android:name=".App"
+		android:theme="@style/Theme.FPL.Dark"
+		android:allowBackup="true" >
+		
+		<activity android:name=".Home" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".Selection" />
+		<activity android:name=".Players" />
+		<activity android:name=".Player" />
+		<activity android:name=".Vidiprinter" />
+		<activity android:name=".Stats" />
+		<activity android:name=".Settings" />
+		<activity android:name=".Teams" />
+		<activity android:name=".Team" />
+		<activity android:name=".Leagues" />
+		<activity android:name=".League" />
+		<activity android:name=".Links" />
+		<activity android:name=".FPLSquad" />
+		<activity android:name=".Fixture" />
+		<activity android:name=".Hot" />
+		<activity android:name=".Matches" />
+		<activity android:name=".About" />
+		
+		<service android:name=".process.FPLService" android:exported="false">
+			<intent-filter>
+				<action android:name="com.pennas.fpl.FPLService" />
+			</intent-filter>
+		</service>
+
+		<receiver android:name=".ui.WidgetSmall" android:label="Differential 4x1">
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+			</intent-filter>
+			<meta-data android:name="android.appwidget.provider"
+				android:resource="@xml/widget_info_small" />
+		</receiver>
+
+		<receiver android:name=".ui.WidgetNormal" android:label="Differential 4x2">
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+			</intent-filter>
+			<meta-data android:name="android.appwidget.provider"
+				android:resource="@xml/widget_info" />
+		</receiver>
+
+		<receiver android:name=".ui.WidgetLarge" android:label="Differential 4x4">
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+			</intent-filter>
+			<meta-data android:name="android.appwidget.provider"
+				android:resource="@xml/widget_info_large" />
+		</receiver>
+
+		<receiver android:name=".process.DiffBroadcastReceiver"
+			android:enabled="false">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+				<action android:name="com.pennas.fpl.ALARM_PROD" />
+			</intent-filter>
+		</receiver>
+		<meta-data android:name="com.crashlytics.ApiKey" android:value="f8412b408e06ab174887bfaebc0f5e2d5c67a783"/>
+
+	</application>
+</manifest>

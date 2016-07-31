@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/backing"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:padding="0sp" >
+	<TextView android:id="@+id/position" android:layout_width="15sp"
+		android:layout_height="17sp" android:textSize="16sp" android:maxLines="1"
+		android:gravity="top" android:textColor="#FFBF00"
+		android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+		android:padding="0sp" android:layout_marginRight="4sp" />
+
+	<com.pennas.fpl.ui.Worm android:id="@+id/worm"
+		android:layout_width="fill_parent" android:layout_height="17sp"
+		android:padding="0dp" android:layout_alignParentTop="true"
+		android:layout_toLeftOf="@+id/position" />
+
+	<ImageView android:id="@+id/playerPic" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_below="@+id/worm"
+		android:layout_alignParentLeft="true" android:contentDescription="Player" />
+
+	<com.pennas.fpl.ui.Ticker android:id="@+id/ticker"
+		android:layout_width="115sp" android:layout_height="16sp"
+		android:padding="0dp" android:layout_below="@+id/worm"
+		android:layout_alignParentRight="true" android:layout_marginRight="4sp"
+		android:layout_marginTop="4sp" android:layout_marginBottom="4sp" />
+
+	<TableLayout android:id="@+id/statsbit"
+		android:layout_width="170sp" android:layout_height="fill_parent"
+		android:layout_below="@+id/ticker" android:layout_alignParentRight="true"
+		android:layout_marginRight="4sp" android:gravity="center_vertical">
+		<TableRow>
+			<TextView android:id="@+id/lab0" android:layout_width="wrap_content"
+				android:layout_height="fill_parent" android:textSize="11sp"
+				android:clickable="true" android:onClick="clickStat"
+				android:longClickable="true" android:layout_weight=".5" />
+			<TextView android:id="@+id/stat0" android:gravity="center_vertical"
+				android:layout_width="wrap_content" android:layout_height="fill_parent"
+				android:textSize="19sp" android:clickable="true" android:onClick="clickStat"
+				android:longClickable="true" android:textColor="#FFFFFF"
+				android:maxLines="1" android:layout_weight=".5" />
+			<TextView android:id="@+id/lab2" android:layout_width="wrap_content"
+				android:layout_height="fill_parent" android:textSize="11sp"
+				android:clickable="true" android:onClick="clickStat"
+				android:longClickable="true" android:layout_weight=".5" />
+			<TextView android:id="@+id/stat2" android:gravity="center"
+				android:layout_width="wrap_content" android:layout_height="fill_parent"
+				android:textSize="19sp" android:clickable="true" android:onClick="clickStat"
+				android:longClickable="true" android:textColor="#FFFFFF"
+				android:maxLines="1" android:layout_weight=".5" />
+		</TableRow>
+		<TableRow>
+			<TextView android:id="@+id/lab1" android:layout_width="wrap_content"
+				android:layout_height="fill_parent" android:textSize="11sp"
+				android:clickable="true" android:onClick="clickStat"
+				android:longClickable="true" android:layout_weight=".5" />
+			<TextView android:id="@+id/stat1" android:gravity="center_vertical"
+				android:layout_width="wrap_content" android:layout_height="fill_parent"
+				android:textSize="19sp" android:clickable="true" android:onClick="clickStat"
+				android:longClickable="true" android:textColor="#FFFFFF"
+				android:maxLines="1" android:layout_weight=".5" />
+			<TextView android:id="@+id/lab3" android:layout_width="wrap_content"
+				android:layout_height="fill_parent" android:textSize="11sp"
+				android:clickable="true" android:onClick="clickStat"
+				android:longClickable="true" android:layout_weight=".5" />
+			<TextView android:id="@+id/stat3" android:gravity="center"
+				android:layout_width="wrap_content" android:layout_height="fill_parent"
+				android:textSize="19sp" android:clickable="true" android:onClick="clickStat"
+				android:longClickable="true" android:textColor="#FFFFFF"
+				android:maxLines="1" android:layout_weight=".5" />
+		</TableRow>
+	</TableLayout>
+	
+	<TextView android:id="@+id/pName" android:gravity="center_vertical"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:textSize="18sp" android:maxLines="1" android:layout_below="@+id/worm"
+		android:layout_toRightOf="@+id/playerPic" android:layout_toLeftOf="@+id/ticker"
+		android:layout_marginLeft="-2sp" />
+
+	<ImageView android:id="@+id/shirtPic" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:scaleType="fitStart"
+		android:adjustViewBounds="true" android:layout_below="@+id/pName"
+		android:layout_toRightOf="@+id/playerPic" android:layout_alignBottom="@+id/playerPic"
+		android:layout_marginLeft="-5sp" android:contentDescription="Shirt" />
+	
+	<com.pennas.fpl.ui.Pie android:id="@+id/pie"
+		android:layout_width="29sp" android:layout_height="29sp"
+		android:padding="0dp" android:layout_alignBottom="@+id/shirtPic"
+		android:layout_toLeftOf="@+id/statsbit" />
+
+	<TextView android:id="@+id/value" android:layout_height="wrap_content"
+		android:textSize="18sp" android:layout_width="wrap_content"
+		android:textColor="#FFFFFF" android:maxLines="1"
+		android:layout_alignBottom="@+id/playerPic" android:layout_alignRight="@+id/playerPic"
+		android:layout_marginBottom="-6sp" android:paddingBottom="0sp"
+		android:layout_marginRight="1sp" />
+
+	<ImageView android:id="@+id/watchlisticon"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_alignLeft="@+id/worm" android:layout_below="@+id/worm"
+		android:contentDescription="Watchlist" />
+		
+	<ImageView android:id="@+id/flag" android:layout_width="35sp"
+		android:layout_height="35sp" android:layout_toLeftOf="@+id/pie"
+		android:layout_below="@+id/pName" android:layout_marginLeft="20sp"
+		android:scaleType="centerInside" android:contentDescription="Flag" />
+</RelativeLayout>

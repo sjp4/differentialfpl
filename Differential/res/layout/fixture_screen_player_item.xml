@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:orientation="horizontal" android:paddingTop="4sp"
+	android:paddingBottom="4sp">
+	<ImageView android:id="@+id/playerpic" android:layout_width="0dp"
+		android:layout_height="wrap_content" android:layout_weight="0.1"
+		android:scaleType="fitXY" android:adjustViewBounds="true"
+		android:contentDescription="Player" android:gravity="center_vertical" />
+	<TextView android:id="@+id/name" android:textSize="16sp"
+		android:layout_width="0dp" android:layout_height="wrap_content"
+		android:layout_weight="0.32" android:text="Player"
+		android:gravity="center_vertical" />
+	<TextView android:id="@+id/points" android:textSize="18sp"
+		android:layout_width="0dp" android:layout_height="wrap_content"
+		android:layout_weight="0.10" android:text="Pts" android:textColor="#FFFF00"
+		android:gravity="center_vertical" />
+	<View android:layout_width="1sp" android:layout_height="fill_parent"
+		android:background="#44FFFFFF" />
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="0dp" android:layout_height="wrap_content"
+		android:layout_weight="0.78" android:paddingTop="0dp" android:paddingBottom="0dp" >
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="match_parent" android:layout_height="wrap_content"
+			android:paddingTop="0dp" android:paddingBottom="0dp" >
+			<TextView android:id="@+id/minutes" android:textSize="12sp"
+				android:layout_width="0dp" android:layout_height="wrap_content"
+				android:layout_weight="0.10" android:text="Min" android:textColor="#FFFFFF"
+				android:gravity="center" />
+			<View android:layout_width="1sp" android:layout_height="fill_parent"
+				android:background="#44FFFFFF" />
+			<TextView android:id="@+id/goals" android:textSize="12sp"
+				android:layout_width="0dp" android:layout_height="wrap_content"
+				android:layout_weight="0.10" android:text="Gol" android:textColor="#FFFFFF"
+				android:gravity="center" />
+			<View android:layout_width="1sp" android:layout_height="fill_parent"
+				android:background="#44FFFFFF" />
+			<TextView android:id="@+id/assists" android:textSize="12sp"
+				android:layout_width="0dp" android:layout_height="wrap_content"
+				android:layout_weight="0.10" android:text="Ass" android:textColor="#FFFFFF"
+				android:gravity="center" />
+			<View android:layout_width="1sp" android:layout_height="fill_parent"
+				android:background="#44FFFFFF" />
+			<TextView android:id="@+id/bonus" android:textSize="12sp"
+				android:layout_width="0dp" android:layout_height="wrap_content"
+				android:layout_weight="0.10" android:text="Bon" android:textColor="#FFFFFF"
+				android:gravity="center" />
+			<View android:layout_width="1sp" android:layout_height="fill_parent"
+				android:background="#44FFFFFF" />
+			<TextView android:id="@+id/conc" android:textSize="12sp"
+				android:layout_width="0dp" android:layout_height="wrap_content"
+				android:layout_weight="0.10" android:text="Con" android:textColor="#FFFFFF"
+				android:gravity="center" />
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="match_parent" android:layout_height="wrap_content"
+			android:paddingTop="0dp" android:paddingBottom="0dp" >
+			<TextView android:id="@+id/saves" android:textSize="11sp"
+				android:layout_width="0dp" android:layout_height="wrap_content"
+				android:layout_weight="0.10" android:text="Sav" android:textColor="#99FFFFFF"
+				android:gravity="center" />
+			<View android:layout_width="1sp" android:layout_height="fill_parent"
+				android:background="#44FFFFFF" />
+			<TextView android:id="@+id/psav" android:textSize="11sp"
+				android:layout_width="0dp" android:layout_height="wrap_content"
+				android:layout_weight="0.10" android:text="PS" android:textColor="#99FFFFFF"
+				android:gravity="center" />
+			<View android:layout_width="1sp" android:layout_height="fill_parent"
+				android:background="#44FFFFFF" />
+			<TextView android:id="@+id/pmiss" android:textSize="11sp"
+				android:layout_width="0dp" android:layout_height="wrap_content"
+				android:layout_weight="0.10" android:text="PM" android:textColor="#99FFFFFF"
+				android:gravity="center" />
+			<View android:layout_width="1sp" android:layout_height="fill_parent"
+				android:background="#44FFFFFF" />
+			<TextView android:id="@+id/bps" android:textSize="11sp"
+				android:layout_width="0dp" android:layout_height="wrap_content"
+				android:layout_weight="0.10" android:text="BPS" android:textColor="#99FFFFFF"
+				android:gravity="center" />
+			<View android:layout_width="1sp" android:layout_height="fill_parent"
+				android:background="#44FFFFFF" />
+			<TextView android:id="@+id/og" android:textSize="11sp"
+				android:layout_width="0dp" android:layout_height="wrap_content"
+				android:layout_weight="0.10" android:text="OG" android:textColor="#99FFFFFF"
+				android:gravity="center" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<include layout="@layout/tips" />
+	<com.pennas.fpl.ui.Worm android:id="@+id/seasonworm"
+		android:layout_width="fill_parent" android:layout_height="17sp"
+		android:padding="0dp" android:layout_below="@+id/tipsview" />
+	<LinearLayout android:id="@+id/playerInfo"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:orientation="horizontal" android:layout_below="@+id/seasonworm">
+		<ImageView android:id="@+id/playerPic" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:clickable="true"
+			android:onClick="clickWatchlist" android:contentDescription="Player" />
+		<ImageView android:id="@+id/shirtPic" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:scaleType="fitXY"
+			android:adjustViewBounds="true" android:contentDescription="Shirt" />
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<LinearLayout android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content">
+				<com.pennas.fpl.ui.Pie android:id="@+id/seasonpie"
+					android:layout_width="37sp" android:layout_height="37sp"
+					android:padding="0dp" />
+				<TextView android:id="@+id/pointsforme"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:textSize="16sp" />
+			</LinearLayout>
+			<TextView android:id="@+id/news" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:textSize="16sp"
+				android:textColor="#FFFFFF" />
+		</LinearLayout>
+	</LinearLayout>
+	<ImageView android:id="@+id/flag" android:layout_width="27sp"
+		android:layout_height="27sp" android:layout_alignLeft="@+id/seasonworm"
+		android:layout_below="@+id/seasonworm" android:layout_marginLeft="40sp"
+		android:scaleType="centerInside" android:contentDescription="Flag" />
+	<ImageView android:id="@+id/watchlisticon"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true" android:layout_alignBottom="@+id/playerInfo"
+		android:clickable="true" android:onClick="clickWatchlist"
+		android:contentDescription="Watchlist" />
+	<TextView android:id="@+id/watchlisttext"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:textSize="13sp" android:text="watchlist"
+		android:layout_alignBottom="@+id/playerInfo" android:layout_toRightOf="@+id/watchlisticon" />
+
+	<com.viewpagerindicator.TitlePageIndicator
+		android:id="@+id/titles" android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:layout_below="@+id/playerInfo"
+		android:background="@drawable/vpi_gradient" />
+
+	<android.support.v4.view.ViewPager
+		android:id="@+id/viewpager" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_below="@+id/titles" />
+
+	<include layout="@layout/sync_panel" />
+</RelativeLayout>

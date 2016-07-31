@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="widget_margin">8dp</dimen>
+    <dimen name="max_name_size">22sp</dimen>
+    <!-- 
+    <dimen name="selection_stat_size">22sp</dimen>
+    <dimen name="points_size">40sp</dimen>
+    <dimen name="home_score_size">31sp</dimen>
+    <dimen name="c_vc_size">40sp</dimen>
+    <dimen name="sync_desc_state_size">19sp</dimen>
+     -->
+    <dimen name="selection_stat_size">15sp</dimen>
+    <dimen name="points_size">28sp</dimen>
+    <dimen name="home_score_size">22sp</dimen>
+    <dimen name="c_vc_size">29sp</dimen>
+    <dimen name="sync_desc_state_size">14sp</dimen>
+</resources>

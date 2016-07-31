@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<include layout="@layout/tips" />
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_below="@+id/tipsview">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="vertical"
+			android:layout_marginRight="3sp">
+			<RelativeLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+				<TextView android:id="@+id/lab_squad" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textSize="13sp"
+					android:text="Squad" android:layout_alignParentTop="true"
+					android:layout_alignParentLeft="true" />
+				<TextView android:id="@+id/info_squad"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:textSize="13sp" android:textColor="#FFFFFF"
+					android:paddingLeft="4sp" android:layout_alignParentTop="true"
+					android:layout_toRightOf="@+id/lab_squad" />
+				<TextView android:id="@+id/lab_next" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textSize="13sp"
+					android:text="Next" android:layout_below="@+id/lab_squad"
+					android:layout_alignParentLeft="true" />
+				<TextView android:id="@+id/info_next" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textSize="13sp"
+					android:textColor="#FFFFFF" android:paddingLeft="4sp"
+					android:layout_below="@+id/lab_squad" android:layout_toRightOf="@+id/lab_next"
+					android:layout_toLeftOf="@+id/log_in_out" />
+				<TextView android:id="@+id/log_in_out"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:textSize="18sp" android:textColor="#FFFFFF"
+					android:paddingTop="4sp" android:paddingBottom="4sp"
+					android:paddingLeft="2sp" android:paddingRight="2sp"
+					android:layout_marginLeft="4sp" android:clickable="true"
+					android:background="#44ffffff" android:onClick="clickLogInOut"
+					android:layout_alignParentRight="true"
+					android:layout_alignParentBottom="true" android:layout_marginRight="10sp"
+					android:layout_marginTop="2sp" />
+			</RelativeLayout>
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:textSize="20sp"
+				android:gravity="center" android:textColor="#ff111111"
+				android:background="@drawable/home_gradient" android:text="My Team"
+				android:layout_margin="6sp" />
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="horizontal"
+				android:baselineAligned="false" >
+				<LinearLayout android:id="@+id/row1col1"
+					android:layout_weight="0.5" android:layout_width="0dip"
+					android:layout_height="wrap_content" android:orientation="vertical">
+					<ImageView android:id="@+id/b_selection"
+						android:clickable="true" android:onClick="clickSelection"
+						android:layout_height="wrap_content" android:gravity="center_horizontal"
+						android:layout_width="fill_parent" android:contentDescription="Selection" />
+					<TextView android:layout_height="wrap_content"
+						android:gravity="center_horizontal" android:layout_width="fill_parent"
+						android:text="Selection" android:textSize="21sp"
+						android:clickable="true" android:onClick="clickSelection"
+						android:textColor="#FFFFFF" />
+					<TextView android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:text="Subs + transfers for next gameweek"
+						android:textSize="12sp" android:gravity="center_horizontal" />
+				</LinearLayout>
+				<LinearLayout android:id="@+id/row1col2"
+					android:layout_weight="0.5" android:layout_width="0dip"
+					android:layout_height="wrap_content" android:orientation="vertical">
+					<ImageView android:id="@+id/b_leagues" android:clickable="true"
+						android:onClick="clickLeagues" android:layout_height="wrap_content"
+						android:gravity="center_horizontal" android:layout_width="fill_parent"
+						android:contentDescription="Leagues" />
+					<TextView android:layout_height="wrap_content"
+						android:gravity="center_horizontal" android:layout_width="fill_parent"
+						android:text="Leagues" android:textSize="21sp" android:clickable="true"
+						android:onClick="clickLeagues" android:textColor="#FFFFFF" />
+					<TextView android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:text="Minileagues and rivals"
+						android:textSize="12sp" android:gravity="center_horizontal" />
+				</LinearLayout>
+				<LinearLayout android:id="@+id/row1col3"
+					android:layout_weight="0.5" android:layout_width="0dip"
+					android:layout_height="wrap_content" android:orientation="vertical">
+					<ImageView android:id="@+id/b_scores" android:clickable="true"
+						android:onClick="clickScores" android:layout_height="wrap_content"
+						android:gravity="center_horizontal" android:layout_width="fill_parent"
+						android:contentDescription="Points" />
+					<TextView android:layout_height="wrap_content"
+						android:gravity="center_horizontal" android:layout_width="fill_parent"
+						android:text="Points" android:textSize="21sp" android:clickable="true"
+						android:onClick="clickScores" android:textColor="#FFFFFF" />
+					<TextView android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:text="Latest points for this gameweek"
+						android:textSize="12sp" android:gravity="center_horizontal" />
+				</LinearLayout>
+			</LinearLayout>
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:textSize="20sp"
+				android:gravity="center" android:textColor="#ff111111"
+				android:background="@drawable/home_gradient" android:text="Live Updates"
+				android:layout_margin="6sp" />
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="horizontal"
+				android:baselineAligned="false" >
+				<LinearLayout android:id="@+id/row2col1"
+					android:layout_weight="0.5" android:layout_width="0dip"
+					android:layout_height="wrap_content" android:orientation="vertical">
+					<ImageView android:id="@+id/b_matches" android:clickable="true"
+						android:onClick="clickMatches" android:layout_height="wrap_content"
+						android:gravity="center_horizontal" android:layout_width="fill_parent"
+						android:contentDescription="Matches" />
+					<TextView android:layout_height="wrap_content"
+						android:gravity="center_horizontal" android:layout_width="fill_parent"
+						android:text="Matches" android:textSize="21sp" android:textColor="#FFFFFF"
+						android:clickable="true" android:onClick="clickMatches" />
+					<TextView android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:text="Match scores + player points"
+						android:textSize="12sp" android:gravity="center_horizontal" />
+				</LinearLayout>
+				<LinearLayout android:id="@+id/row2col2"
+					android:layout_weight="0.5" android:layout_width="0dip"
+					android:layout_height="wrap_content" android:orientation="vertical">
+					<ImageView android:id="@+id/b_live" android:clickable="true"
+						android:onClick="clickLive" android:layout_height="wrap_content"
+						android:gravity="center_horizontal" android:layout_width="fill_parent"
+						android:contentDescription="Hot" />
+					<TextView android:layout_height="wrap_content"
+						android:gravity="center_horizontal" android:layout_width="fill_parent"
+						android:text="Hot" android:textSize="21sp" android:textColor="#FFFFFF"
+						android:clickable="true" android:onClick="clickLive" />
+					<TextView android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:text="Top gameweek players and rivals"
+						android:textSize="12sp" android:gravity="center_horizontal" />
+				</LinearLayout>
+				<LinearLayout android:id="@+id/row2col3"
+					android:layout_weight="0.55" android:layout_width="0dip"
+					android:layout_height="wrap_content" android:orientation="vertical">
+					<ImageView android:id="@+id/b_vidiprinter"
+						android:clickable="true" android:onClick="clickVidiprinter"
+						android:layout_height="wrap_content" android:gravity="center_horizontal"
+						android:layout_width="fill_parent" android:contentDescription="Vidiprinter" />
+					<TextView android:layout_height="wrap_content"
+						android:gravity="center_horizontal" android:layout_width="fill_parent"
+						android:text="Vidiprinter" android:textSize="21sp"
+						android:textScaleX="0.98" android:clickable="true"
+						android:onClick="clickVidiprinter" android:textColor="#FFFFFF" />
+					<TextView android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:text="Watch the points roll in"
+						android:textSize="12sp" android:gravity="center_horizontal" />
+				</LinearLayout>
+			</LinearLayout>
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:textSize="20sp"
+				android:gravity="center" android:textColor="#ff111111"
+				android:background="@drawable/home_gradient" android:text="Knowledge"
+				android:layout_margin="6sp" />
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="horizontal"
+				android:baselineAligned="false" >
+				<LinearLayout android:id="@+id/row3col1"
+					android:layout_weight="0.5" android:layout_width="0dip"
+					android:layout_height="wrap_content" android:orientation="vertical">
+					<ImageView android:id="@+id/b_teams" android:clickable="true"
+						android:onClick="clickTeams" android:layout_height="wrap_content"
+						android:gravity="center_horizontal" android:layout_width="fill_parent"
+						android:contentDescription="Teams" />
+					<TextView android:layout_height="wrap_content"
+						android:gravity="center_horizontal" android:layout_width="fill_parent"
+						android:text="Teams" android:textSize="21sp" android:clickable="true"
+						android:onClick="clickTeams" android:textColor="#FFFFFF" />
+					<TextView android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:text="Team info and ratings"
+						android:textSize="12sp" android:gravity="center_horizontal" />
+				</LinearLayout>
+				<LinearLayout android:id="@+id/row3col2"
+					android:layout_weight="0.5" android:layout_width="0dip"
+					android:layout_height="wrap_content" android:orientation="vertical">
+					<ImageView android:id="@+id/b_stats" android:clickable="true"
+						android:onClick="clickStats" android:layout_height="wrap_content"
+						android:gravity="center_horizontal" android:layout_width="fill_parent"
+						android:contentDescription="Stats" />
+					<TextView android:layout_height="wrap_content"
+						android:gravity="center_horizontal" android:layout_width="fill_parent"
+						android:text="Stats" android:textSize="21sp" android:clickable="true"
+						android:onClick="clickStats" android:textColor="#FFFFFF" />
+					<TextView android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:text="Top performing teams and players"
+						android:textSize="12sp" android:gravity="center_horizontal" />
+				</LinearLayout>
+				<LinearLayout android:id="@+id/row3col3"
+					android:layout_weight="0.5" android:layout_width="0dip"
+					android:layout_height="wrap_content" android:orientation="vertical">
+					<ImageView android:id="@+id/b_players" android:clickable="true"
+						android:onClick="clickPlayers" android:layout_height="wrap_content"
+						android:gravity="center_horizontal" android:layout_width="fill_parent"
+						android:contentDescription="Players" />
+					<TextView android:layout_height="wrap_content"
+						android:gravity="center_horizontal" android:layout_width="fill_parent"
+						android:text="Players" android:textSize="21sp" android:clickable="true"
+						android:onClick="clickPlayers" android:textColor="#FFFFFF" />
+					<TextView android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:text="Player search and details"
+						android:textSize="12sp" android:gravity="center_horizontal" />
+				</LinearLayout>
+				<LinearLayout android:id="@+id/row3col4"
+					android:layout_weight="0.5" android:layout_width="0dip"
+					android:layout_height="wrap_content" android:orientation="vertical">
+					<ImageView android:id="@+id/b_links" android:clickable="true"
+						android:onClick="clickLinks" android:layout_height="wrap_content"
+						android:gravity="center_horizontal" android:layout_width="fill_parent"
+						android:contentDescription="Links" />
+					<TextView android:layout_height="wrap_content"
+						android:gravity="center_horizontal" android:layout_width="fill_parent"
+						android:text="Links" android:textSize="21sp" android:clickable="true"
+						android:onClick="clickLinks" android:textColor="#FFFFFF" />
+					<TextView android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:text="Useful links for news and info"
+						android:textSize="12sp" android:gravity="center_horizontal" />
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+	<include layout="@layout/sync_panel" />
+</RelativeLayout>

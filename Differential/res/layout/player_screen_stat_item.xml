@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:paddingTop="2sp" android:paddingBottom="3sp"
+	android:background="@drawable/list_item_gradient" >
+	<TextView android:id="@+id/statdesc" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:textSize="19sp"
+		android:gravity="left" android:layout_toLeftOf="@+id/statvalue"
+		android:textColor="#FFFFFF" />
+	<TextView android:id="@+id/statvalue" android:layout_width="wrap_content"
+		android:layout_height="fill_parent" android:textSize="27sp"
+		android:paddingRight="10sp" android:layout_alignParentRight="true"
+		android:textColor="#FFFF00" android:gravity="center_vertical"
+		android:layout_gravity="center_vertical" />
+</RelativeLayout>

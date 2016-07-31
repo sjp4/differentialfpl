@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/layout_root" android:orientation="vertical"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:padding="10dp">
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:textSize="16sp"
+		android:textColor="#FFFFFF" android:paddingBottom="10sp"
+		android:text="Please enter your login details for fantasy.premierleague.com.\n\nDifferential will remember your details until you log out" />
+	<EditText android:id="@+id/email" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:hint="Email"
+		android:inputType="textEmailAddress" />
+	<EditText android:id="@+id/password" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:hint="Password"
+		android:inputType="textPassword" />
+</LinearLayout>

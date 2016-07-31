@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<include layout="@layout/tips" />
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+		android:id="@+id/transferMode" android:background="#FF0000"
+		android:orientation="horizontal">
+		<TextView android:id="@+id/transferModeLeft"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:textSize="20sp" android:textColor="#FFFFFF" android:text="Transfer"
+			android:layout_alignParentLeft="true" />
+		<TextView android:id="@+id/transferModeRight"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:textSize="20sp" android:textColor="#FFFFFF"
+			android:layout_alignParentRight="true" />
+	</RelativeLayout>
+	<ListView android:id="@android:id/list" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_below="@+id/tipsview"
+		android:layout_above="@+id/transferMode" />
+	<include layout="@layout/sync_panel" />
+</RelativeLayout>

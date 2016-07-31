@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:orientation="vertical" android:paddingRight="6sp"
+	android:background="@drawable/list_item_gradient" >
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="horizontal">
+		<ImageView android:id="@+id/shirtPicA" android:layout_width="35sp"
+			android:layout_height="wrap_content" android:scaleType="fitXY"
+			android:adjustViewBounds="true" android:layout_gravity="center"
+			android:contentDescription="Team 1" />
+		<RelativeLayout android:layout_width="80sp"
+			android:layout_height="wrap_content" android:orientation="vertical">
+			<TextView android:id="@+id/teamNameA" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:textSize="15sp"
+				android:textColor="#FFFFFF" />
+			<TextView android:id="@+id/playerNameA" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:textSize="10sp"
+				android:textColor="#AAFFFFFF" android:layout_marginTop="-5sp"
+				android:layout_below="@+id/teamNameA" />
+			<TextView android:id="@+id/teamNameB" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:textSize="15sp"
+				android:textColor="#FFFFFF" android:layout_marginTop="-5sp"
+				android:layout_below="@+id/playerNameA" />
+			<TextView android:id="@+id/playerNameB" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:textSize="10sp"
+				android:textColor="#AAFFFFFF" android:layout_marginTop="-5sp"
+				android:layout_below="@+id/teamNameB" />
+		</RelativeLayout>
+		<ImageView android:id="@+id/shirtPicB" android:layout_width="35sp"
+			android:layout_height="wrap_content" android:scaleType="fitXY"
+			android:adjustViewBounds="true" android:layout_gravity="center"
+			android:contentDescription="Team 2" />
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:orientation="vertical">
+			<TextView android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:textSize="16sp"
+				android:text="CS %" />
+			<TextView android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:textSize="16sp"
+				android:text="Home" />
+		</LinearLayout>
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:orientation="vertical">
+			<TextView android:id="@+id/csPerc" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:textSize="16sp"
+				android:textColor="#FFFFFF" />
+			<TextView android:id="@+id/gwHome" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:textSize="16sp"
+				android:textColor="#FFFFFF" />
+		</LinearLayout>
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:orientation="vertical">
+			<TextView android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:textSize="16sp"
+				android:text="Cost" />
+			<TextView android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:textSize="16sp"
+				android:text="CS?" />
+		</LinearLayout>
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:orientation="vertical">
+			<TextView android:id="@+id/cost" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:textSize="16sp"
+				android:textColor="#FFFFFF" />
+			<TextView android:id="@+id/cs" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:textSize="16sp"
+				android:textColor="#FFFFFF" />
+		</LinearLayout>
+	</LinearLayout>
+	<com.pennas.fpl.ui.Ticker android:id="@+id/ticker"
+		android:layout_width="fill_parent" android:layout_height="16sp" />
+</LinearLayout>
